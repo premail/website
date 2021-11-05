@@ -8,13 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Premail',
   tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options.',
-  url: 'https://premail.dev',
+  url: 'https://premail.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'premail', // Usually your GitHub org/user name.
   projectName: 'premail', // Usually your repo name.
+  trailingSlash: true,
 
   presets: [
     [
