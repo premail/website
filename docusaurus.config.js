@@ -107,6 +107,10 @@ const config = {
                 label: 'Premail development guide',
                 to: '/docs/components/summary/',
               },
+              {
+                label: 'Thanks & appreciation',
+                to: '/appreciation/',
+              },
             ],
           },
           {
