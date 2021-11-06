@@ -4,32 +4,35 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Powered by MJML',
+    Svg: require('../../static/img/lightning.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Stop fighting those email client rendering gotchas! Premail builds
+        on <a href="https://mjml.io/" target="_blank">MJML</a> so you can write
+        less code and ignore all that ridiculousness.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'A configurable build process',
+    Svg: require('../../static/img/bricks.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        MJML intentionally doesn't include a build process. This is that build
+        process, and it's configurable to meet your needs and catch the edge
+        cases.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Organize with components in style',
+    Svg: require('../../static/img/blueprint.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Design and structure probably doesn't change every time you hit send.
+        Keep the style and scaffolding pieces of your emails separate from
+        content and ensure consistency.
       </>
     ),
   },

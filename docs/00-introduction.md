@@ -11,7 +11,7 @@ title: ''
 ---
 
 [MJML](https://mjml.io/) is a markup language for writing bulletproof HTML
-emails. It consciously does not incorporate a build process. This is one such
+emails. It consciously does not incorporate a build process. This is that
 build process.
 
 Premail is component-based, and uses Handlebars for templating. Settings are
