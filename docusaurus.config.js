@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Premail',
-  tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options!',
+  tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options.',
   url: 'https://premail.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -25,13 +25,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/premail/premail/tree/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/premail/premail/tree/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,24 +43,49 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      hideableSidebar: true,
       navbar: {
-        title: 'My Site',
+        title: 'Premail',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Premail.dev',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'introduction',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            to: '/contributing',
+            position: 'left',
+            label: 'Contributing',
+          },
+          {
+            to: '/security',
+            position: 'left',
+            label: 'Security',
+          },
+          {
+            to: '/code_of_conduct',
+            position: 'left',
+            label: 'Code of Conduct',
+          },
+          {
+            to: '/sponsors',
+            position: 'left',
+            label: 'Sponsors',
+          },
+          {
+            to: '/blog',
             position: 'right',
+            label: 'Blog'
+          },
+          {
+            href: 'https://github.com/premail/premail',
+            position: 'right',
+            label: 'GitHub',
           },
         ],
       },
@@ -68,11 +93,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Premail overview',
+                to: '/docs/introduction-to-premail/',
+              },
+              {
+                label: 'Custom MJML Components',
+                to: '/docs/components/summary/',
+              },
+              {
+                label: 'Premail development guide',
+                to: '/docs/components/summary/',
               },
             ],
           },
@@ -80,16 +113,20 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Support',
+                to: '/docs/support-project-help/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Contribute!',
+                to: '/contributing/',
+              },
+              {
+                label: 'Sponsors',
+                to: '/sponsors/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/premail',
               },
             ],
           },
@@ -102,12 +139,16 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/premail/premail',
+              },
+              {
+                label: 'MJML documentation',
+                href: 'https://documentation.mjml.io/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0; height:20px; vertical-align:text-top;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a> Premail documentation is © ${new Date().getFullYear()} and licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons BY-SA 4.0 International License</a>.<br /><a href="https://github.com/premail/premail/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/premail/premail?color=blue&style=flat-square" alt="AGPLv3 license" style="border-width:0; height:20px; vertical-align:text-top;" /></a> Premail itself is licensed as <a href="https://github.com/premail/premail/blob/main/LICENSE" target="_blank">AGPLv3</a><hr />Built with <a href="https://docusaurus.io/" target="_blank">Docusaurus</a>.`,
       },
       prism: {
         theme: lightCodeTheme,
