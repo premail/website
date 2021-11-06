@@ -32,4 +32,4 @@ should clean up and format various language files appropriately:
   implementation.
 - YAML and Markdown files are wrapped when possible at 80 characters. This is
   enforced with Prettier.
-- Indents are 2 spaces, enforced with [`.editorconfig`](/.editorconfig).
+- Indents are 2 spaces, enforced with [`.editorconfig`](https://github.com/premail/premail/tree/v2.0.0/.editorconfig).

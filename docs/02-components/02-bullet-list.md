@@ -107,7 +107,7 @@ An example of this can be found in the default design's
 | `font-size`        | pixels                               | Applies to list item                    | `13px` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                 |
 | `font-style`       | string                               | Applies to list item                    | none                                                                                                |
 | `font-weight`      | string                               | Applies to list item                    | none                                                                                                |
-| `gutter`           | pixels                               | Distance between bullet marker and text | default set in [`themeConfig.yaml`](designs/_templates/theme/themeConfig.yaml)                      |
+| `gutter`           | pixels                               | Distance between bullet marker and text | default set in [`themeConfig.yaml`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/theme/themeConfig.yaml)                      |
 | `letter-spacing`   | pixels (negative allowed)            | Applies to list item                    | none                                                                                                |
 | `line-height`      | number, pixels or percentage         | Applies to list item                    | none                                                                                                |
 | `padding-right`    | pixels                               | Applies to list item                    | none                                                                                                |

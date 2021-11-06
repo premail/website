@@ -17,6 +17,6 @@ If you want to say **thank you** and/or support active development of Premail:
   Twitter).
 - Consider [sponsoring rootwork](https://github.com/sponsors/rootwork),
   Premail's developer, and have
-  [your name or logo included here](/docs/premail-sponsors-thanks/)!
+  [your name or logo included here](/sponsors/)!
 - Blog about the project. We love reviews, and are eager to hear ways we could
   make things even better.
