@@ -87,6 +87,11 @@ const config = {
             position: 'right',
             label: 'GitHub',
           },
+          {
+            href: 'https://twitter.com/premaildev',
+            position: 'right',
+            label: 'Twitter',
+          },
         ],
       },
       footer: {
@@ -130,7 +135,7 @@ const config = {
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/premail',
+                href: 'https://twitter.com/premaildev',
               },
             ],
           },
