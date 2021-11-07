@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'premail', // Usually your GitHub org/user name.
-  projectName: 'premail', // Usually your repo name.
+  projectName: 'website', // Usually your repo name.
   trailingSlash: true,
 
   presets: [
