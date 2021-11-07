@@ -1,6 +1,8 @@
 # Premail.dev website
 
-This is the code for <https://premail.dev> -- if you're looking for the `premail` repo itself, visit <https://github.com/premail/premail/>.
+**This is the code for <https://premail.dev> -- if you're looking for the `premail` repo itself, visit <https://github.com/premail/premail/>.**
+
+---
 
 The Premail website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. Code is hosted in the `main` branch, and the rendered site in [`gh-pages`](https://github.com/premail/website/tree/gh-pages), where it is unsurprisingly hosted on GitHub Pages.
 
