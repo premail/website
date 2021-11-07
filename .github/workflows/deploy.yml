@@ -49,8 +49,9 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-files: 'src/pages/**.md'
-          destination-username: 'rootwork'
+          destination-username: 'premail'
           destination-repository: 'premail'
           destination-branch: 'v2.0.0'
           destination-directory: 'docs'
+          commit-username: 'rootwork'
           commit-email: 'git@rootwork.org'
