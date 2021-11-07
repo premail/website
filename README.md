@@ -46,3 +46,13 @@ You can also deploy manually with:
 ```sh
 GIT_USER=<username> USE_SSH=true yarn deploy
 ```
+
+## License
+
+Premail documentation is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License. To view a copy of this
+license, visit <http://creativecommons.org/licenses/by-sa/4.0/>
+
+Note that this license only covers the documentation, not the code itself, which
+is licensed under the AGPLv3+:
+<https://github.com/premail/premail/blob/main/LICENSE>
