@@ -21,7 +21,7 @@ Node.
 yarn
 ```
 
-### Local development
+### Watch
 
 ```sh
 yarn start
@@ -39,7 +39,7 @@ This command generates static content into the `build` directory. It's generally
 
 ### Deployment
 
-Merge a PR or push changes to the `main` branch and the website will be automatically rebuilt and deployed.
+🢧 Merge a PR or push changes to the `main` branch and the website will be automatically rebuilt and deployed.
 
 You can also deploy manually with:
 
