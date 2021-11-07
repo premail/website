@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Premail',
-  tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options!',
+  tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options.',
   url: 'https://premail.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
