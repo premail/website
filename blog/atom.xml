@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://premail.github.io/blog</id>
+    <title>Premail Blog</title>
+    <updated>2021-11-01T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://premail.github.io/blog"/>
+    <subtitle>Premail Blog</subtitle>
+    <icon>https://premail.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Premail 2.0 is coming!]]></title>
+        <id>premail-2.0-coming</id>
+        <link href="https://premail.github.io/blog/premail-2.0-coming"/>
+        <updated>2021-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Premail]]></summary>
+        <content type="html"><![CDATA[<p><img src="./logo.png" alt="Premail"/></p><p>Premail version 2.0 is almost here!</p><p>Check back soon for the full release, or track our progress at:</p><p><a href="https://github.com/premail/premail/releases">https://github.com/premail/premail/releases</a></p>]]></content>
+        <author>
+            <name>Ivan Boothe</name>
+            <uri>https://rootwork.org</uri>
+        </author>
+    </entry>
+</feed>
