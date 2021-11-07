@@ -44,6 +44,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: ./website
+          token: ${{ secrets.API_TOKEN_GITHUB }}
       - name: Checkout code repo
         uses: actions/checkout@master
         with:
