@@ -1,37 +1,48 @@
-# Website
+# Premail.dev website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This is the code for <https://premail.dev> -- if you're looking for the `premail` repo itself, visit <https://github.com/premail/premail/>.
+
+The Premail website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. Code is hosted in the `main` branch, and the rendered site in [`gh-pages`](https://github.com/premail/website/tree/gh-pages), where it is unsurprisingly hosted on GitHub Pages.
+
+Changes to the `main` branch trigger the website to be rebuilt and deployed automatically.
+
+## Development
 
 ### Prerequisites
 
-Node >= 14.x (whereas Premail uses Node 12.x).
+- Node >= 14.x (which can be checked by running `node -v`). Note`premail` itself uses Node 12.x; We recommend using [n](https://github.com/tj/n) or
+[nvm](https://github.com/nvm-sh/nvm) if you're managing multiple versions of
+Node.
+- Yarn version >= 1.5 (which can be checked by running `yarn --version`). Yarn is a performant package manager for JavaScript and replaces the npm client. It is not strictly necessary but highly encouraged.
 
 ### Installation
 
-```
-$ yarn
+```sh
+yarn
 ```
 
-### Local Development
+### Local development
 
-```
-$ yarn start
+```sh
+yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+### Test build
 
-```
-$ yarn build
+```sh
+yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content into the `build` directory. It's generally unnecessary to run this locally, since it's run automatically during deployment, but if issues arise this will show you exactly what Docusaurus is creating.
 
 ### Deployment
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+Merge a PR or push changes to the `main` branch and the website will be automatically rebuilt and deployed.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+You can also deploy manually with:
+
+```sh
+GIT_USER=<username> USE_SSH=true yarn deploy
+```
