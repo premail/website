@@ -1,6 +1,6 @@
 # Premail.dev website
 
-**This is the code for <https://premail.dev> -- if you're looking for the `premail` repo itself, visit <https://github.com/premail/premail/>.**
+**This is the repository for <https://premail.dev> website. If you're looking for the `premail` code itself, visit <https://github.com/premail/premail/>.**
 
 ---
 
