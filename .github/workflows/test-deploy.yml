@@ -1,4 +1,4 @@
-name: Test deployment
+name: Test deployment of changed website
 
 on:
   pull_request:

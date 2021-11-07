@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy changed website
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy website
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: 14.x
           cache: yarn
-      - uses: webfactory/ssh-agent@v0.5.0
-        with:
-          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Build website
         run: |
           yarn install --frozen-lockfile
@@ -38,14 +35,22 @@ jobs:
           # You can swap them out with your own user credentials.
           user_name: Premail
           user_email: git@premail.dev
-      - name: Copy basic documentation files
+  copy:
+    name: Copy basic documentation files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - name: Copy files
         uses: nkoppel/push-files-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-files: 'src/pages/**.md'
-          destination-username: 'premail'
+          destination-username: 'rootwork'
           destination-repository: 'premail'
           destination-branch: 'v2.0.0'
           destination-directory: 'docs'
-          commit-email: 'git@premail.dev'
+          commit-email: 'git@rootwork.org'
