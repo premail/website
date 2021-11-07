@@ -39,7 +39,7 @@ jobs:
           user_name: Premail
           user_email: git@premail.dev
       - name: Copy basic documentation files
-        uses: nkoppel/push-files-to-another-repository@latest
+        uses: nkoppel/push-files-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
