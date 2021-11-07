@@ -51,17 +51,17 @@ jobs:
           token: ${{ secrets.API_TOKEN_GITHUB }}
           path: ./premail
       - name: Copy files
-          run: |
-            FILES=./website/src/pages/*.md
-            for f in $FILES; do
-              echo "Copying $f"
-              cp -R $f ./premail
-            done
+        run: |
+          FILES=./website/src/pages/*.md
+          for f in $FILES; do
+            echo "Copying $f"
+            cp -R $f ./premail
+          done
       - name: Commit changes
-          run: |
-            cd ./premail
-            git add .
-            git config user.name rootwork
-            git config user.email git@rootwork.org
-            git commit -am "Updated documentation files"
-            git push
+        run: |
+          cd ./premail
+          git add .
+          git config user.name rootwork
+          git config user.email git@rootwork.org
+          git commit -am "Updated documentation files"
+          git push
