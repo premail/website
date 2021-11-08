@@ -43,9 +43,10 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'src/pages/contributing.md'
+        source_file: 'src/pages/.'
         destination_repo: 'premail/premail'
+        destination-branch: 'v2.0.0'
         destination_folder: 'docs'
-        user_email: 'git@premail.dev'
+        user_email: 'git@rootwork.org'
         user_name: 'Premail'
         commit_message: 'Updated documentation files'
