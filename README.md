@@ -51,10 +51,8 @@ GIT_USER=<username> USE_SSH=true yarn deploy
 
 ## License
 
-Premail documentation is licensed under the Creative Commons
-Attribution-ShareAlike 4.0 International License. To view a copy of this
-license, visit <http://creativecommons.org/licenses/by-sa/4.0/>
+**[Premail.dev](https://premail.dev)** is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Note that this license only covers the documentation, not the code itself, which
-is licensed under the AGPLv3+:
-<https://github.com/premail/premail/blob/main/LICENSE>
+**Premail itself** is licensed under the GNU Affero General Public License v3.0 or later. To be clear: This license only covers Premail, _not_ any content you generate _using_ Premail. Those files are yours to do with as you wish, and you need not share them, much less license them, in any particular way.
+
+For the legal details of the AGPL, see the complete [LICENSE](https://github.com/premail/premail/blob/main/LICENSE).
