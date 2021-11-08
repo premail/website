@@ -43,7 +43,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_file: 'src/pages/.'
+        source_file: 'src/pages/.md'
         destination_repo: 'premail/premail'
         destination_branch: 'v2.0.0'
         destination_folder: 'docs'
