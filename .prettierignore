@@ -1,5 +1,15 @@
-# Ignore everything except the Markdown files
-! *.md
+# Directories we want to completely ignore
+.docusaurus/
+.github/
+build/
+dist/
+
+# Files we want to completely ignore
+*.js
+*.json
+*.css
+*.yml
+*.yaml
 
 # Config files
 .editorconfig
@@ -14,10 +24,6 @@ LICENSE*.*
 # Temporary files
 .tmp/
 *.tmp
-
-# Builds
-dist/
-build/
 
 # Package files, since these will be auto-generated
 package.json
