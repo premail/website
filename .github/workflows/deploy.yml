@@ -42,30 +42,30 @@ jobs:
     steps:
       - name: Setup
         run:
-        export GITHUB_USER=rootwork
-        export GITHUB_EMAIL=git@rootwork.org
-        export FROM_REPO=website
-        export FROM_PATH=src/pages/*.md
-        export TO_REPO=premail
-        export TO_BRANCH=v2.0.0
-        export TO_PATH=docs
-        git config --global user.email $GITHUB_EMAIL
-        git config --global user.name $GITHUB_USER
-        git clone https://github.com/premail/$FROM_REPO.git
-        git clone https://github.com/premail/$TO_REPO.git
-        cd $TO_REPO
-        git checkout $TO_BRANCH
+          export GITHUB_USER=rootwork
+          export GITHUB_EMAIL=git@rootwork.org
+          export FROM_REPO=website
+          export FROM_PATH=src/pages/*.md
+          export TO_REPO=premail
+          export TO_BRANCH=v2.0.0
+          export TO_PATH=docs
+          git config --global user.email $GITHUB_EMAIL
+          git config --global user.name $GITHUB_USER
+          git clone https://github.com/premail/$FROM_REPO.git
+          git clone https://github.com/premail/$TO_REPO.git
+          cd $TO_REPO
+          git checkout $TO_BRANCH
       - name: Copy files
         run: |
-        cp ../$FROM_REPO/$FROM_PATH $TO_PATH
-        git update-index -q --refresh
+          cp ../$FROM_REPO/$FROM_PATH $TO_PATH
+          git update-index -q --refresh
       - name: Commit any changes
         with:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         run: |
-        if ! git diff-index --quiet HEAD --; then
-          git remote set-url origin https://$GITHUB_USER:$API_TOKEN_GITHUB@github.com/premail/$TO_REPO
-          git add .
-          git commit -m "Updated documentation files from premail/$FROM_REPO" --signoff
-          git push
-        fi
+          if ! git diff-index --quiet HEAD --; then
+            git remote set-url origin https://$GITHUB_USER:$API_TOKEN_GITHUB@github.com/premail/$TO_REPO
+            git add .
+            git commit -m "Updated documentation files from premail/$FROM_REPO" --signoff
+            git push
+          fi
