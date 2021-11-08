@@ -15,7 +15,7 @@ get feedback from the maintainers and avoid unncessary work.
 
 :::caution Code of Conduct
 
-Premail has a [code of conduct](code_of_conduct): Please follow it in all
+Premail has a [code of conduct](/code_of_conduct): Please follow it in all
 your interactions with the project.
 
 :::
