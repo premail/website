@@ -51,9 +51,9 @@ The `theme` subdirectory contains two sets of files: Configuration and styles.
   they use Sass to import variables from your theme configuration, but you can
   ignore or overwrite these styles if you wish. The Sass files are heavily
   commented to make it clear which styles they control.
-- `theme/*.hbs` files are Handlebars files with MJML markup that load settings from
-  `themeConfig.yaml` into MJML itself. If you have a style that you can't seem
-  to change, check these files. They are included in the `index.hbs` file
+- `theme/*.hbs` files are Handlebars files with MJML markup that load settings
+  from `themeConfig.yaml` into MJML itself. If you have a style that you can't
+  seem to change, check these files. They are included in the `index.hbs` file
   automatically.
 
 Finally, note that some attributes must be set on `<mj-wrapper>` elements for

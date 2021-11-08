@@ -10,9 +10,9 @@ the name "postmodern", as an example, you'd do the following in your console:
 premail new design postmodern
 ```
 
-Then run `premail watch` with the `-d` option, followed by the
-directory name of your design. Using the example above with a design named
-"postmodern", you'd run:
+Then run `premail watch` with the `-d` option, followed by the directory name of
+your design. Using the example above with a design named "postmodern", you'd
+run:
 
 ```sh
 premail watch -d postmodern

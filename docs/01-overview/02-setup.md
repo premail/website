@@ -6,8 +6,8 @@ slug: setting-up-premail
 
 ## Requirements
 
-Premail runs on Node. You'll need to have at
-least [Node](https://nodejs.org/en/download/) 12.x installed.
+Premail runs on Node. You'll need to have at least
+[Node](https://nodejs.org/en/download/) 12.x installed.
 
 :::info Node versions
 
@@ -42,6 +42,7 @@ into it, you can install it locally with:
 ```bash
 npm install premail --save-dev
 ```
+
 You are also free to fork this repo and alter it to fit your needs.
 
 :::tip Editor plugins

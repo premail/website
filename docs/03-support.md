@@ -10,7 +10,8 @@ slug: support-project-help
 
 :::tip Get help
 
-**[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=support-question&template=04_SUPPORT_QUESTION.md&title=support%3A+)** on GitHub if you're stuck.
+**[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=support-question&template=04_SUPPORT_QUESTION.md&title=support%3A+)**
+on GitHub if you're stuck.
 
 :::
 
@@ -20,7 +21,6 @@ If you want to say **thank you** and/or support active development of Premail:
 - Tweet about Premail ([@premaildev](https://twitter.com/premaildev) on
   Twitter).
 - Consider [sponsoring rootwork](https://github.com/sponsors/rootwork),
-  Premail's developer, and have
-  [your name or logo included here](/sponsors/)!
+  Premail's developer, and have [your name or logo included here](/sponsors/)!
 - Blog about the project. We love reviews, and are eager to hear ways we could
   make things even better.

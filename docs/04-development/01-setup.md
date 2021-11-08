@@ -10,8 +10,7 @@ Clone Premail's GitHub repo:
 git clone https://github.com/premail/premail
 ```
 
-Run `node --version` to determine your release of Node and install if
-necessary.
+Run `node --version` to determine your release of Node and install if necessary.
 
 :::info Node versions
 

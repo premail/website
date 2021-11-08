@@ -27,7 +27,8 @@ This component provides two shortcuts for these elements:
 ### Example use
 
 An example of this can be found in the default design's
-[`content/body.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/body.hbs) template:
+[`content/body.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/body.hbs)
+template:
 
 ```html
 <mj-list background-color="#ddd" border-top="18px #ddd solid">
@@ -41,18 +42,18 @@ An example of this can be found in the default design's
 </mj-text>
 <mj-list>
   <mj-li
-    >List item one. Lorem ipsum dolor sit amet, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua.</mj-li
+    >List item one. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua.</mj-li
   >
   <mj-li color="blue"
     >List item two, customized color for the entire list item.</mj-li
   >
   <mj-li>List item three.</mj-li>
   <mj-li bullet-color="red" padding-left="40px"
-    >List item four, customized bullet color and left padding. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+    >List item four, customized bullet color and left padding. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.
   </mj-li>
   <mj-li gutter="20px">List item five, custom gutter size.</mj-li>
   <mj-li>List item six.</mj-li>
@@ -97,22 +98,22 @@ An example of this can be found in the default design's
 
 ### <mj-li\> options
 
-| option             | unit                                 | details                                 | default value                                                                                       |
-| ------------------ | ------------------------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| `color`            | color                                | Applies to both bullet marker and text  | none (inherited from parent text style)                                                             |
-| `bullet-color`     | color                                | Applies to bullet marker only           | none (inherited from `color`)                                                                       |
-| `text-color`       | color                                | Applies to text only                    | none (inherited from `color`)                                                                       |
-| `background-color` | color                                | Applies to list item                    | none                                                                                                |
-| `font-family`      | string                               | Applies to list item                    | `Ubuntu, Helvetica, Arial, sans-serif` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text)) |
-| `font-size`        | pixels                               | Applies to list item                    | `13px` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                 |
-| `font-style`       | string                               | Applies to list item                    | none                                                                                                |
-| `font-weight`      | string                               | Applies to list item                    | none                                                                                                |
-| `gutter`           | pixels                               | Distance between bullet marker and text | default set in [`themeConfig.yaml`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/theme/themeConfig.yaml)                      |
-| `letter-spacing`   | pixels (negative allowed)            | Applies to list item                    | none                                                                                                |
-| `line-height`      | number, pixels or percentage         | Applies to list item                    | none                                                                                                |
-| `padding-right`    | pixels                               | Applies to list item                    | none                                                                                                |
-| `padding-left`     | pixels                               | Applies to list item                    | none                                                                                                |
-| `text-align`       | `left`, `center`, `right`, `justify` | Applies to list item                    | `left`                                                                                              |
-| `text-decoration`  | string                               | Applies to list item                    | none                                                                                                |
-| `text-transform`   | string                               | Applies to list item                    | none                                                                                                |
-| `vertical-align`   | `top`, `middle`, `bottom`            | Applies to list item                    | `top`                                                                                               |
+| option             | unit                                 | details                                 | default value                                                                                                                           |
+| ------------------ | ------------------------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `color`            | color                                | Applies to both bullet marker and text  | none (inherited from parent text style)                                                                                                 |
+| `bullet-color`     | color                                | Applies to bullet marker only           | none (inherited from `color`)                                                                                                           |
+| `text-color`       | color                                | Applies to text only                    | none (inherited from `color`)                                                                                                           |
+| `background-color` | color                                | Applies to list item                    | none                                                                                                                                    |
+| `font-family`      | string                               | Applies to list item                    | `Ubuntu, Helvetica, Arial, sans-serif` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                     |
+| `font-size`        | pixels                               | Applies to list item                    | `13px` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                                                     |
+| `font-style`       | string                               | Applies to list item                    | none                                                                                                                                    |
+| `font-weight`      | string                               | Applies to list item                    | none                                                                                                                                    |
+| `gutter`           | pixels                               | Distance between bullet marker and text | default set in [`themeConfig.yaml`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/theme/themeConfig.yaml) |
+| `letter-spacing`   | pixels (negative allowed)            | Applies to list item                    | none                                                                                                                                    |
+| `line-height`      | number, pixels or percentage         | Applies to list item                    | none                                                                                                                                    |
+| `padding-right`    | pixels                               | Applies to list item                    | none                                                                                                                                    |
+| `padding-left`     | pixels                               | Applies to list item                    | none                                                                                                                                    |
+| `text-align`       | `left`, `center`, `right`, `justify` | Applies to list item                    | `left`                                                                                                                                  |
+| `text-decoration`  | string                               | Applies to list item                    | none                                                                                                                                    |
+| `text-transform`   | string                               | Applies to list item                    | none                                                                                                                                    |
+| `vertical-align`   | `top`, `middle`, `bottom`            | Applies to list item                    | `top`                                                                                                                                   |

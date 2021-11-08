@@ -6,13 +6,15 @@ title: ''
 
 ![Premail](/img/logo_large.svg)
 
-**Premail is an easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options.**
+**Premail is an easy-to-use component-based build system for MJML, the email
+templating language, with Handlebars templating, Sass styles, and extra
+options.**
 
 ---
 
 [MJML](https://mjml.io/) is a markup language for writing bulletproof HTML
-emails. It consciously does not incorporate a build process. This is that
-build process.
+emails. It consciously does not incorporate a build process. This is that build
+process.
 
 Premail is component-based, and uses Handlebars for templating. Settings are
 defined in YAML configuration files, and theming happens in a theme

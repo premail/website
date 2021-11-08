@@ -4,7 +4,6 @@ sidebar_label: Code style and syntax
 slug: code-style-syntax
 ---
 
-
 Premail includes [sheerun/modern-node](https://github.com/sheerun/modern-node),
 which formats and lints code using [Prettier](https://prettier.io/). This is
 used both in the user-facing project side and internally, so in general it
@@ -27,9 +26,11 @@ should clean up and format various language files appropriately:
   [node-sass-json-importer](https://github.com/pmowrer/node-sass-json-importer)
   (which does, in fact, work with Dart Sass) to import variables from
   configuration files into the Sass files. See
-  [`src/config/sassImport.js`](https://github.com/premail/premail/tree/v2.0.0/src/config/sassImport.js) and the `sass()`
-  function in [`src/tasks/build.js`](https://github.com/premail/premail/tree/v2.0.0/src/tasks/build.js) for the
-  implementation.
+  [`src/config/sassImport.js`](https://github.com/premail/premail/tree/v2.0.0/src/config/sassImport.js)
+  and the `sass()` function in
+  [`src/tasks/build.js`](https://github.com/premail/premail/tree/v2.0.0/src/tasks/build.js)
+  for the implementation.
 - YAML and Markdown files are wrapped when possible at 80 characters. This is
   enforced with Prettier.
-- Indents are 2 spaces, enforced with [`.editorconfig`](https://github.com/premail/premail/tree/v2.0.0/.editorconfig).
+- Indents are 2 spaces, enforced with
+  [`.editorconfig`](https://github.com/premail/premail/tree/v2.0.0/.editorconfig).

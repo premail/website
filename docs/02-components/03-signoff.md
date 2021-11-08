@@ -7,8 +7,7 @@ slug: mjml-signoff
 
 MJML Signoff is included automatically in Premail. It is also available
 separately via [GitHub](https://github.com/premail/mjml-signoff) and
-[NPM](https://www.npmjs.com/package/mjml-signoff) for use in any MJML
-project.
+[NPM](https://www.npmjs.com/package/mjml-signoff) for use in any MJML project.
 
 :::
 
@@ -16,8 +15,8 @@ project.
 
 ## Why a custom component?
 
-A common best practice in emails is to include a photo along side your
-"signoff" (such as "Best, Tamara").
+A common best practice in emails is to include a photo along side your "signoff"
+(such as "Best, Tamara").
 
 Getting images to "float" alongside text, even in mobile contexts, can be
 tricky. **`<mj-signoff>`** simplifies this.
@@ -25,7 +24,8 @@ tricky. **`<mj-signoff>`** simplifies this.
 ### Example use
 
 An example of this can be found in the default design's
-[`content/signoff.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/signoff.hbs) template:
+[`content/signoff.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/signoff.hbs)
+template:
 
 ```html
 <mj-signoff
@@ -72,7 +72,7 @@ Instead of using this component, you can use the
 [`<mj-group>`](https://documentation.mjml.io/#mj-group) element, but note its
 warning for iOS 9.
 
-If you are not using an image in your sign-off, or intend for the image to be
-on a line without text wrapping around it (such as an image of a signature), you
+If you are not using an image in your sign-off, or intend for the image to be on
+a line without text wrapping around it (such as an image of a signature), you
 can simply use MJML's [`<mj-text>`](https://documentation.mjml.io/#mj-text)
 element.

@@ -3,7 +3,9 @@ title: Project settings
 slug: project-settings
 ---
 
-Look at the [`config.yaml`](https://github.com/premail/premail/blob/v2.0.0/src/example/config.yaml) file at the root of your project you just created.
+Look at the
+[`config.yaml`](https://github.com/premail/premail/blob/v2.0.0/src/example/config.yaml)
+file at the root of your project you just created.
 
 Here you'll find options for setting the names of your `designs` and `emails`
 directories, which will hold individual designs and emails, respectively. You

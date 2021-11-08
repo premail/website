@@ -13,4 +13,3 @@ It will not attempt to lint or format files in `dist` directories.
 
 If you want to format your template files separately (for instance while you're
 working on them), run `premail format`. This is run automatically during builds.
-
