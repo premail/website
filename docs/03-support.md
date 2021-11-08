@@ -4,6 +4,10 @@ sidebar_label: Support
 slug: support-project-help
 ---
 
+<!-- Note this is replicated at
+     https://github.com/premail/premail/tree/v2.0.0#getting-support
+     so be sure to update it there as well. -->
+
 :::tip Get help
 
 **[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=support-question&template=04_SUPPORT_QUESTION.md&title=support%3A+)** on GitHub if you're stuck.
