@@ -45,8 +45,8 @@ jobs:
       with:
         source_file: 'src/pages/.'
         destination_repo: 'premail/premail'
-        destination-branch: 'v2.0.0'
+        destination_branch: 'v2.0.0'
         destination_folder: 'docs'
         user_email: 'git@rootwork.org'
-        user_name: 'Premail'
+        user_name: 'rootwork'
         commit_message: 'Updated documentation files'
