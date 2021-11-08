@@ -42,13 +42,7 @@ jobs:
     steps:
       - name: Setup
         run : |
-        export GITHUB_USER=rootwork
-        export GITHUB_EMAIL=git@rootwork.org
-        export FROM_REPO=website
-        export FROM_PATH=src/pages/*.md
-        export TO_REPO=premail
-        export TO_BRANCH=v2.0.0
-        export TO_PATH=docs
+        export GITHUB_USER=rootwork GITHUB_EMAIL=git@rootwork.org FROM_REPO=website FROM_PATH=src/pages/*.md TO_REPO=premail TO_BRANCH=v2.0.0 TO_PATH=docs
         git config --global user.email $GITHUB_EMAIL
         git config --global user.name $GITHUB_USER
         git clone https://github.com/premail/$FROM_REPO.git
