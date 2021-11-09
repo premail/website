@@ -1,6 +1,6 @@
 ---
 name: Documentation change
-about: Suggest a change to the project documentation
+about: Suggest a change to Premail documentation
 title: ''
 labels: ''
 assignees: ''
