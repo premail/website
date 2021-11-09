@@ -14,7 +14,7 @@ jobs:
       - name: Get today's date
         id: date
         run: |
-          echo "::set-output name=today::$(date "+%Y/%m/%d")"
+          echo "::set-output name=today::$(date "+%M %j, %Y")"
       - name: Create an issue
         uses: actions-ecosystem/action-create-issue@v1
         with:
@@ -23,12 +23,9 @@ jobs:
           github_token: ${{ secrets.API_TOKEN_GITHUB }}
           title: Component documentation update ${{ steps.date.outputs.today }}
           body: |
-            Documentation for <mjml-signoff> has been updated at
-            [premail/website](https://github.com/premail/website/blob/main/docs/02-components/03-signoff.md)
+            Documentation for <mjml-signoff> has been updated at [premail/website](https://github.com/premail/website/blob/main/docs/02-components/03-signoff.md)
 
-            The
-            [README.md](https://github.com/premail/mjml-signoff/blob/main/README.md)
-            file needs to be updated to match.
+            The [README.md](https://github.com/premail/mjml-signoff/blob/main/README.md) file needs to be updated to match.
 
           labels: |
             documentation
