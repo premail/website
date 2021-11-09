@@ -87,5 +87,3 @@ If you are not using an image in your sign-off, or intend for the image to be on
 a line without text wrapping around it (such as an image of a signature), you
 can simply use MJML's [`<mj-text>`](https://documentation.mjml.io/#mj-text)
 element.
-
----
