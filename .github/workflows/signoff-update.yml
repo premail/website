@@ -20,7 +20,7 @@ jobs:
         with:
           repo: premail/mjml-signoff
           assignees: rootwork
-          github_token: ${{ secrets.github_token }}
+          github_token: ${{ secrets.API_TOKEN_GITHUB }}
           title: Component documentation update ${{ steps.date.outputs.today }}
           body: |
             Documentation for <mjml-signoff> has been updated at
