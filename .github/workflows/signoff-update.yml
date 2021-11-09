@@ -28,4 +28,4 @@ jobs:
             The [README.md](https://github.com/premail/mjml-signoff/blob/main/README.md) file needs to be updated to match.
 
           labels: |
-            documentation
+            'Type: Documentation'
