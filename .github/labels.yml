@@ -4,7 +4,7 @@
 - name: 'Type: Addition/Enhancement'
   color: 7fdeea
   description: 'New features for the docs.'
-- name: 'Type: Typo'
+- name: 'Type: Typos'
   color: f8bad0
   description: 'Misspellings, grammar fixes and other simple corrections to the docs.'
 - name: 'Type: Unclear/Inaccurate'
