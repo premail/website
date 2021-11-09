@@ -1,0 +1,34 @@
+name: Create <mjml-signoff> issue on change
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - docs/02-components/03-signoff.md
+
+jobs:
+  create_issue:
+    name: Create an issue on push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get today's date
+        id: date
+        run: |
+          echo "::set-output name=today::$(date "+%Y/%m/%d")"
+      - name: Create an issue
+        uses: actions-ecosystem/action-create-issue@v1
+        with:
+          repo: premail/mjml-signoff
+          assignees: rootwork
+          github_token: ${{ secrets.github_token }}
+          title: Component documentation update ${{ steps.date.outputs.today }}
+          body: |
+            Documentation for <mjml-signoff> has been updated at
+            [premail/website](https://github.com/premail/website/blob/main/docs/02-components/03-signoff.md)
+
+            The
+            [README.md](https://github.com/premail/mjml-signoff/blob/main/README.md)
+            file needs to be updated to match.
+
+          labels: |
+            documentation
