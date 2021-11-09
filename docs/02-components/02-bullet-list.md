@@ -128,3 +128,4 @@ template:
 | `text-decoration`  | string                               | Applies to list item                    | none                                                                                                                                    |
 | `text-transform`   | string                               | Applies to list item                    | none                                                                                                                                    |
 | `vertical-align`   | `top`, `middle`, `bottom`            | Applies to list item                    | `top`                                                                                                                                   |
+---
