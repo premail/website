@@ -6,7 +6,7 @@ labels: ''
 assignees: ''
 ---
 
-# Documentation change
+## Type
 
 Check all that apply:
 
