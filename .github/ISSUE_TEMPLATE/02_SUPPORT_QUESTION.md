@@ -6,10 +6,8 @@ labels: 'Type: Question'
 assignees: ''
 ---
 
-# Support question
+<!-- Note this is the issue queue for the Premail website located at https://premail.dev -- if you have a question about Premail itself, please file it here:
 
-<!-- Note this is the issue queue for the Premail website located at
-     https://premail.dev -- if you have a question about Premail itself, please
-     file it here:
-     https://github.com/premail/premail/issues/new
-     -->
+https://github.com/premail/premail/issues/new
+
+-->
