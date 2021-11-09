@@ -3,6 +3,17 @@ title: MJML Signoff
 slug: mjml-signoff
 ---
 
+<!-- This component's documentation and README need to stay in sync. Make sure
+     to make any updates here in both places:
+
+     https://premail.dev/docs/components/mjml-signoff/
+     https://github.com/premail/mjml-signoff/blob/main/README.md
+
+     Should differences exist, the README is considered canonical as it is
+     published to NPM:
+     https://www.npmjs.com/package/mjml-signoff
+-->
+
 :::info Included in Premail
 
 MJML Signoff is included automatically in Premail. It is also available

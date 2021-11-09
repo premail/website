@@ -3,6 +3,17 @@ title: MJML Bullet List
 slug: mjml-bullet-list
 ---
 
+<!-- This component's documentation and README need to stay in sync. Make sure
+     to make any updates here in both places:
+
+     https://premail.dev/docs/components/mjml-bullet-list/
+     https://github.com/premail/mjml-bullet-list/blob/main/README.md
+
+     Should differences exist, the README is considered canonical as it is
+     published to NPM:
+     https://www.npmjs.com/package/mjml-bullet-list
+-->
+
 :::info Included in Premail
 
 MJML Bullet List is included automatically in Premail. It is also available
