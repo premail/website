@@ -12,7 +12,7 @@
   description: 'Fixing docs that are incorrect, misleading or confusing.'
 - name: 'Type: Formatting/Accessibility'
   color: ac1357
-  description: 'Improving presentation and a11y of the docs.'
+  description: 'Improving presentation and/or a11y of the docs.'
 - name: 'Type: Build Process'
   color: 7985cb
   description: 'Docusaurus, GitHub Actions and other tools used to create the docs.'
