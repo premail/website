@@ -17,5 +17,11 @@ Check all that apply:
 - [ ] Build process (Docusaurus, GitHub Actions, etc.)
 - [ ] Other (please describe):
 
+## Pages affected
+
+<!-- URLs or links to the pages on Premail.dev -->
+
+## Suggested changes
+
 <!-- Summarize your suggested changes below, or open a Pull Request and include
      a link to it here. -->
