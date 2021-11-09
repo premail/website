@@ -18,7 +18,7 @@ automatically.
 ### Prerequisites
 
 - Node >= 14.x (which can be checked by running `node -v`). Note`premail` itself
-  uses Node 12.x; We recommend using [n](https://github.com/tj/n) or
+  uses Node 12.x; we recommend using [n](https://github.com/tj/n) or
   [nvm](https://github.com/nvm-sh/nvm) if you're managing multiple versions of
   Node.
 - Yarn version >= 1.5 (which can be checked by running `yarn --version`). Yarn
