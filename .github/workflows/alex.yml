@@ -1,12 +1,7 @@
 name: Alex inclusive writing check
 # https://alexjs.com
 
-on:
-  push:
-    branches:
-      - '**'
-  pull_request_target:
-    types: [opened, synchronize, reopened]
+on: pull_request_target
 
 jobs:
   alex:
