@@ -11,7 +11,7 @@ on:
 
 jobs:
   alex:
-    name: Check for inclusive writing
+    name: Verify inclusive writing
     runs-on: ubuntu-latest
     steps:
       - name: Check out code from GitHub
