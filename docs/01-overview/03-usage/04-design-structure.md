@@ -6,7 +6,7 @@ slug: explore-design-structure
 
 Look in the `designs` subdirectory. This will hold each of the designs
 (structure and styling) for your emails. For instance, you might have a
-newsletter design, a welcome message design, and a special holiday design.
+newsletter design, a welcome message design, and a holiday design.
 
 The `_default` directory holds an example design. You can choose to use this
 design and modify it, or write your own.
@@ -22,7 +22,7 @@ templating. When your project is compiled, the Handlebars processing comes
 first, and so these files have the `.hbs` Handlebars extension. In most cases,
 though, all you'll need to know is MJML.
 
-- `index.hbs`: This is the master file that loads each of the components
+- `index.hbs`: This is the primary file that loads each of the components
   (`content` and `structure`) for your email. Usually, you won't need to edit
   this file unless you want to re-order the components themselves.
 - `content/`: This directory holds files that will _always_ change in each email

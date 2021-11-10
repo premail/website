@@ -23,7 +23,7 @@ managing the code for these emails vastly simpler.
 When you're done, you'll have an `index.html` file (and plain-text `index.txt`
 file, if you've chosen the text option) that is optimized to render correctly in
 [the vast majority of email systems and clients](https://mjml.io/faq#email-clients).
-Then just drop the code from the file into your email service provider's system.
+Then drop the code from the file into your email service provider's system.
 
 ## Premail specialties
 
@@ -54,7 +54,7 @@ Then just drop the code from the file into your email service provider's system.
   much better job than most email services at rendering it. While only a small
   number of your recipients will see the plain-text version,
   [they are important for email deliverability](https://www.litmus.com/blog/best-practices-for-plain-text-emails-a-look-at-why-theyre-important/).
-  Within the plain-text version options, you can easily control whether certain
+  Within the plain-text version options, you can control whether certain
   elements like navigation or header/banner areas are included.
 
 - Configuration files are written in [YAML](https://blog.stackpath.com/yaml/),
