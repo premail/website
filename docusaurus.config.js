@@ -131,6 +131,10 @@ const config = {
             title: 'Community',
             items: [
               {
+                label: 'Resources',
+                to: '/docs/resources/'
+              },
+              {
                 label: 'Support',
                 to: '/docs/support-project-help/',
               },
