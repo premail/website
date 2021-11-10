@@ -7,3 +7,8 @@ semi: false
 singleQuote: true
 bracketSpacing: true
 proseWrap: always # Tell Prettier to wrap Markdown files at the printWidth.
+overrides:
+  - files:
+      - '*.mdx'
+    options:
+      parser: markdown
