@@ -1,0 +1,380 @@
+---
+title: MJML Bullet List
+slug: mjml-bullet-list
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<!-- This component's documentation and README need to stay in sync. Make sure
+     to make any updates here in both places:
+
+     https://premail.dev/docs/components/mjml-bullet-list/
+     https://github.com/premail/mjml-bullet-list/blob/main/README.md
+
+     Should differences exist, the README is considered canonical as it is
+     published to NPM:
+     https://www.npmjs.com/package/mjml-bullet-list
+-->
+
+:::info Included in Premail
+
+MJML Bullet List is included automatically in Premail. It is also available
+separately via [GitHub](https://github.com/premail/mjml-bullet-list) and
+[NPM](https://www.npmjs.com/package/mjml-bullet-list) for use in any MJML
+project.
+
+:::
+
+---
+
+## Why a custom component?
+
+`<ul>` and `<li>` HTML elements can be used in HTML emails, but getting them to
+render consistently
+[takes a little work](https://www.litmus.com/blog/the-ultimate-guide-to-bulleted-lists-in-html-email/).
+This component provides two shortcuts for these elements:
+
+- **[`<mj-list>`](#mj-list)**, which replaces `<ul>`
+- **[`<mj-li>`](#mj-li)**, which replaces `<li>`
+
+### Example use
+
+<Tabs>
+<TabItem value="mjml" label="MJML">
+
+```html
+<mj-list>
+  <mj-li>List item one.</mj-li>
+  <mj-li>List item two.</mj-li>
+  <mj-li>List item three.</mj-li>
+  <mj-li>List item four.</mj-li>
+</mj-list>
+```
+
+</TabItem>
+<TabItem value="html" label="HTML">
+Unminified HTML:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+  <tbody>
+    <tr>
+      <td style="background-color:#dddddd;border-top:18px #ddd solid;vertical-align:top;padding-left:25px;">
+        <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+          <tbody role="presentation">
+            <tr>
+              <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                  <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text" style="text-align:left;"> List item one. </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                  <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                    style="text-align:left;"> List item two. </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                  <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                    style="text-align:left;"> List item three. </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                  <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                    style="text-align:left;"> List item four. </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+</TabItem>
+<TabItem value="rendered" label="Rendered component">
+
+![Example of simple generated markup from the MJML Bullet List component](/img/mjml-bullet-list-screenshot-simple.png)
+
+</TabItem>
+</Tabs>
+
+Not very exciting visually, but created in email-friendly (ugly) HTML so it will reliably render in all email clients.
+
+But you can get more creative. An example of this can be found in the default design's
+[`content/body.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/body.hbs)
+template:
+
+<Tabs>
+<TabItem value="mjml" label="MJML">
+
+```html
+<mj-text>
+  <p>Examples of the custom "mj-list" and "mj-li" tags. Here is a list with an
+  option set on the entire list:</p>
+</mj-text>
+<mj-list background-color="#ddd" border-top="18px #ddd solid">
+  <mj-li>List item one.</mj-li>
+  <mj-li>List item two.</mj-li>
+  <mj-li>List item three.</mj-li>
+  <mj-li>List item four.</mj-li>
+</mj-list>
+<mj-text>
+  <p>And here's a list with options set on individual list items:</p>
+</mj-text>
+<mj-list>
+  <mj-li>List item one. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua.</mj-li>
+  <mj-li color="blue">List item two, customized color for the entire list item.</mj-li>
+  <mj-li>List item three.</mj-li>
+  <mj-li bullet-color="red" padding-left="40px">List item four, customized bullet color and left padding. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum.</mj-li>
+  <mj-li gutter="20px">List item five, custom gutter size.</mj-li>
+  <mj-li>List item six.</mj-li>
+  <mj-li text-color="green">List item seven, customized text (only) color. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</mj-li>
+</mj-list>
+```
+
+</TabItem>
+<TabItem value="html" label="HTML">
+Unminified HTML:
+
+```html
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+  <tbody>
+    <tr>
+      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+        <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
+          <h1 style="margin:0;padding:18px 0;font-size:36px;line-height:32px;font-weight:bold;">Lists</h1>
+          <p style="margin-top:0;margin-left:0;margin-right:0;margin-bottom:18px;font-size:18px;mso-line-height-rule:exactly;line-height:1.8;">Examples of the custom &ldquo;mj-list&rdquo; and &ldquo;mj-li&rdquo; tags. Here is a list with an option set on the entire list:</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td vertical-align="top" style="font-size:0px;padding-left:25px;word-break:break-word;">
+        <div class="mj-column-px-NaN mj-outlook-group-fix list" style="padding-bottom:18px;font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+            <tbody>
+              <tr>
+                <td style="background-color:#dddddd;border-top:18px #ddd solid;vertical-align:top;padding-left:25px;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+                    <tbody role="presentation">
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text" style="text-align:left;"> List item one. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="text-align:left;"> List item two. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="text-align:left;"> List item three. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="text-align:left;"> List item four. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+        <div style="font-family:Ubuntu,Helvetica,Arial,sans-serif;font-size:13px;line-height:1;text-align:left;color:#000000;">
+          <p style="margin-top:0;margin-left:0;margin-right:0;margin-bottom:18px;font-size:18px;mso-line-height-rule:exactly;line-height:1.8;">And here&rsquo;s a list with options set on individual list items:</p>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td vertical-align="top" style="font-size:0px;padding-left:25px;word-break:break-word;">
+        <div class="mj-column-px-NaN mj-outlook-group-fix list" style="padding-bottom:18px;font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+            <tbody>
+              <tr>
+                <td style="vertical-align:top;padding-left:25px;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="list" style width="100%">
+                    <tbody role="presentation">
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text" style="text-align:left;"> List item one. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;color:blue;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;">
+                              <span class="list-item__text" style="color:blue;text-align:left;"> List item two, customized color for the entire list item. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="text-align:left;"> List item three. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;padding-left:40px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-left:40px;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="color:red;margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;">
+                              <span class="list-item__text" style="text-align:left;"> List item four, customized bullet color and left padding. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:20px;margin-bottom:18px;margin-bottom:;">
+                              <span class="list-item__text" style="text-align:left;"> List item five, custom gutter size. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="text-align:left;"> List item six. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td vertical-align="top" style="font-size:0px;word-break:break-word;">
+                          <ul role="presentation" class="list-item-wrap" align="left" type="disc" style="margin-left:25px;font-family:Ubuntu,Helvetica,Arial,sans-serif;mso-line-height-rule:exactly;margin-top:0;margin-bottom:0;padding:0;font-size:18px;font-size:;line-height:1.8;line-height:;">
+                            <li role="list-item" class="list-item" style="margin:0;padding:0;padding-left:3px;margin-bottom:18px;margin-bottom:;"> <span class="list-item__text"
+                              style="color:green;text-align:left;"> List item seven, customized text (only) color. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+</TabItem>
+<TabItem value="rendered" label="Rendered component">
+
+![Example of advanced generated markup from the MJML Bullet List component](/img/mjml-bullet-list-screenshot-advanced.png)
+
+</TabItem>
+</Tabs>
+
+
+
+
+
+
+## <mj-list\>
+
+**`<mj-list>`** replaces `<ul>`. Use it alongside
+[`<mj-text>`](https://documentation.mjml.io/#mj-text), within
+[`<mj-column>`](https://documentation.mjml.io/#mj-column).
+
+### <mj-list\> options
+
+| option                   | unit                                                                       | details                                                                      | default value                  |
+| ------------------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ------------------------------ |
+| `background-color`       | color                                                                      | Applies to entire list                                                       | none                           |
+| `border`                 | string ([border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)) | Applies to entire list                                                       | none                           |
+| `border-top`             | string ([border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)) | Applies to entire list                                                       | none                           |
+| `border-right`           | string ([border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)) | Applies to entire list                                                       | none                           |
+| `border-bottom`          | string ([border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)) | Applies to entire list                                                       | none                           |
+| `border-left`            | string ([border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)) | Applies to entire list                                                       | none                           |
+| `border-radius`          | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `direction`              | `ltr`, `rtl`                                                               | [Language direction](https://www.w3.org/International/questions/qa-html-dir) | `ltr`                          |
+| `inner-background-color` | color                                                                      | Applies to entire list                                                       | none                           |
+| `padding`                | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `padding-top`            | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `padding-right`          | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `padding-bottom`         | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `padding-left`           | pixels                                                                     | Applies to entire list                                                       | none                           |
+| `vertical-align`         | `top`, `middle`, `bottom`                                                  | Applies to entire list                                                       | `top`                          |
+| `width`                  | pixels                                                                     | Applies to entire list                                                       | none (full width of container) |
+
+## <mj-li\>
+
+**`<mj-li>`** replaces `<li>`. Use it inside `<mj-list></mj-list>`.
+
+### <mj-li\> options
+
+| option             | unit                                 | details                                 | default value                                                                                                                           |
+| ------------------ | ------------------------------------ | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `color`            | color                                | Applies to both bullet marker and text  | none (inherited from parent text style)                                                                                                 |
+| `bullet-color`     | color                                | Applies to bullet marker only           | none (inherited from `color`)                                                                                                           |
+| `text-color`       | color                                | Applies to text only                    | none (inherited from `color`)                                                                                                           |
+| `background-color` | color                                | Applies to list item                    | none                                                                                                                                    |
+| `font-family`      | string                               | Applies to list item                    | `Ubuntu, Helvetica, Arial, sans-serif` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                     |
+| `font-size`        | pixels                               | Applies to list item                    | `13px` (from [`<mj-text>`](https://documentation.mjml.io/#mj-text))                                                                     |
+| `font-style`       | string                               | Applies to list item                    | none                                                                                                                                    |
+| `font-weight`      | string                               | Applies to list item                    | none                                                                                                                                    |
+| `gutter`           | pixels                               | Distance between bullet marker and text | default set in [`themeConfig.yaml`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/theme/themeConfig.yaml) |
+| `letter-spacing`   | pixels (negative allowed)            | Applies to list item                    | none                                                                                                                                    |
+| `line-height`      | number, pixels or percentage         | Applies to list item                    | none                                                                                                                                    |
+| `padding-right`    | pixels                               | Applies to list item                    | none                                                                                                                                    |
+| `padding-left`     | pixels                               | Applies to list item                    | none                                                                                                                                    |
+| `text-align`       | `left`, `center`, `right`, `justify` | Applies to list item                    | `left`                                                                                                                                  |
+| `text-decoration`  | string                               | Applies to list item                    | none                                                                                                                                    |
+| `text-transform`   | string                               | Applies to list item                    | none                                                                                                                                    |
+| `vertical-align`   | `top`, `middle`, `bottom`            | Applies to list item                    | `top`                                                                                                                                   |
