@@ -3,8 +3,7 @@ title: MJML Bullet List
 slug: mjml-bullet-list
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
 <!-- This component's documentation and README need to stay in sync. Make sure
      to make any updates here in both places:
@@ -43,6 +42,8 @@ This component provides two shortcuts for these elements:
 <Tabs>
 <TabItem value="mjml" label="MJML">
 
+<!-- prettier-ignore-start -->
+
 ```html
 <mj-list>
   <mj-li>List item one.</mj-li>
@@ -52,8 +53,13 @@ This component provides two shortcuts for these elements:
 </mj-list>
 ```
 
+<!-- prettier-ignore-end -->
+
 </TabItem>
 <TabItem value="html" label="HTML">
+
+<!-- prettier-ignore-start -->
+
 Unminified HTML:
 
 ```html
@@ -106,6 +112,8 @@ Unminified HTML:
 </table>
 ```
 
+<!-- prettier-ignore-end -->
+
 </TabItem>
 <TabItem value="rendered" label="Rendered component">
 
@@ -114,14 +122,18 @@ Unminified HTML:
 </TabItem>
 </Tabs>
 
-Not very exciting visually, but created in email-friendly (ugly) HTML so it will reliably render in all email clients.
+Not very exciting visually, but created in email-friendly (ugly) HTML so it will
+reliably render in all email clients.
 
-But you can get more creative. An example of this can be found in the default design's
+But you can get more creative. An example of this can be found in the default
+design's
 [`content/body.hbs`](https://github.com/premail/premail/tree/v2.0.0/src/example/designs/_default/content/body.hbs)
 template:
 
 <Tabs>
 <TabItem value="mjml" label="MJML">
+
+<!-- prettier-ignore-start -->
 
 ```html
 <mj-text>
@@ -154,8 +166,13 @@ template:
 </mj-list>
 ```
 
+<!-- prettier-ignore-end -->
+
 </TabItem>
 <TabItem value="html" label="HTML">
+
+<!-- prettier-ignore-start -->
+
 Unminified HTML:
 
 ```html
@@ -313,6 +330,8 @@ Unminified HTML:
 </table>
 ```
 
+<!-- prettier-ignore-end -->
+
 </TabItem>
 <TabItem value="rendered" label="Rendered component">
 
@@ -320,11 +339,6 @@ Unminified HTML:
 
 </TabItem>
 </Tabs>
-
-
-
-
-
 
 ## <mj-list\>
 
