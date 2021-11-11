@@ -11,3 +11,5 @@ premail init
 
 This will create the starting configuration for your project, an initial design
 to build from, and a sample email.
+
+If you want to reverse this step, you can [destroy the project](/docs/overview/usage/destroy-project/).
