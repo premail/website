@@ -26,7 +26,8 @@ slug: internal-structure
     Premail's end-user
     [design structure](/docs/overview/usage/explore-design-structure/).
   - [`helpers`](https://github.com/premail/premail/blob/v2.0.0/src/helpers) are
-    small utility functions, usually from other sources.
+    small utility functions, usually from other sources, that don't rely on
+    anything specific to Premail to run.
   - [`ops`](https://github.com/premail/premail/blob/v2.0.0/src/ops) are a kind
     of catch-all internal function category: error handling, command-line flags,
     console notification and variable validation.
