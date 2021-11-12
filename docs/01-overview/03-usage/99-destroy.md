@@ -8,7 +8,4 @@ This is generally only useful during testing, but there is a command to destroy 
 
 At the top-level of your project, run `premail destroy` and after confirmation, it will remove everything [`premail init`](/docs/overview/usage/create-new-premail-project/) created.
 
-## Options
-
-- `premail destroy --debug` will list the files and directories that are being removed.
-- `premail destroy --yes` will skip the confirmation step and destroy the project immediately. Use with care.
+`premail destroy --yes` will skip the confirmation step and destroy the project immediately. Use with care.
