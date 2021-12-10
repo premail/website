@@ -30,3 +30,5 @@ version, ready to import into your emailer of choice.
 [See an example of the default layout.](https://github.com/premail/premail/blob/v2.0.0/src/example/designs/_default/dist/index.html)
 
 :::
+
+**Not the right tool for you?** We want you to be successful even if you don't choose Premail, so we've compiled [a list of similar projects](/docs/resources/#projects). And if you're developing a tool like Premail, let us know and we'll add it to the list!

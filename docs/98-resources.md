@@ -55,3 +55,5 @@ Similar CLI-based email-creation projects like Premail, languages used, and last
 - [emails-mjml-hbs](https://github.com/raunsholt/emails-mjml-hbs): MJML, Handlebars ![GitHub last commit](https://img.shields.io/github/last-commit/raunsholt/emails-mjml-hbs?style=flat-square)
 - [Mailplate](https://github.com/kevgk/Mailplate): MJML, Handlebars, Sass ![GitHub last commit](https://img.shields.io/github/last-commit/kevgk/Mailplate?style=flat-square)
 - [Email Crack Server](https://github.com/as3io/email-crack-server): MJML, Handlebars ![GitHub last commit](https://img.shields.io/github/last-commit/as3io/email-crack-server?style=flat-square)
+
+Are we missing one? [Add to the list.](https://github.com/premail/website/tree/main/docs/98-resources.md)
