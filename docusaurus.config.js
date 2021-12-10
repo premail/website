@@ -176,6 +176,25 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: 'BH4D9OD16A',
+
+        // Public API key: it is safe to commit it
+        apiKey: 'b66b35b94fe428fa43afc2032c61d3df',
+
+        indexName: 'premail',
+
+        // Optional for versioned sites
+        // See https://docusaurus.io/docs/search#contextual-search
+        // contextualSearch: true,
+
+        // Optional: When Algolia crawls multiple domains
+        // See additional comments in https://docusaurus.io/docs/search#connecting-algolia
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // Optional: Algolia search parameters
+        searchParameters: { 'facetFilters': ["type:content, lvl1, lvl2, lvl3, lvl5"] },
+      },
     }),
 };
 
