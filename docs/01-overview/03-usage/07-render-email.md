@@ -34,5 +34,5 @@ Once the production email is rendered, you can:
 - Upload the files as part of a repo and use something like
   [GitHub Pages](https://pages.github.com/) to view/share it in a browser -- for
   instance
-  [here's the rendered file](https://github.com/premail/premail/blob/v2.0.0/designs/_templates/dist/index.html)
+  [here's the rendered file](https://github.com/premail/premail/blob/main/designs/_templates/dist/index.html)
   from the sample templates.

@@ -5,7 +5,7 @@ slug: support-project-help
 ---
 
 <!-- Note this is replicated at
-     https://github.com/premail/premail/tree/v2.0.0#getting-support
+     https://github.com/premail/premail/tree/main#getting-support
      so be sure to update it there as well. -->
 
 :::tip Get help
