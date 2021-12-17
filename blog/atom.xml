@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://premail.github.io/blog</id>
     <title>Premail Blog</title>
-    <updated>2021-11-01T00:00:00.000Z</updated>
+    <updated>2021-12-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://premail.github.io/blog"/>
     <subtitle>Premail Blog</subtitle>
     <icon>https://premail.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Premail 2.0 released]]></title>
+        <id>premail-2.0-released</id>
+        <link href="https://premail.github.io/blog/premail-2.0-released"/>
+        <updated>2021-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Premail]]></summary>
+        <content type="html"><![CDATA[<p><img src="./logo.png" alt="Premail"/></p><p>Premail version 2.0 is out! Take a look at <a href="https://www.npmjs.com/package/premail">NPM</a> or <a href="https://github.com/premail/premail">GitHub</a>.</p><p>Compared to where this started, Premail is a completely new tool with a new name, so this is really more like a v1 of a full-featured tool.</p><p>And, transparently, there are still some known bugs. I&#x27;m going to try to create <a href="https://github.com/premail/premail/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">issues</a> for these in the coming days, but I wanted to get a v2 release out the door so that the NPM package could be properly updated.</p><p>More to come!</p>]]></content>
+        <author>
+            <name>Ivan Boothe</name>
+            <uri>https://rootwork.org</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Premail 2.0 is coming!]]></title>
         <id>premail-2.0-coming</id>
