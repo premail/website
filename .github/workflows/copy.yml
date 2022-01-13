@@ -1,0 +1,31 @@
+name: Copy documentation to code repo
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .gitignore
+      - .github/**
+
+jobs:
+  copy:
+    needs: build
+    name: Copy basic documentation files
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Copy files
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'src/pages/.'
+        destination_repo: 'premail/premail'
+        destination_branch: 'main'
+        destination_folder: 'docs'
+        user_email: 'git@rootwork.org'
+        user_name: 'rootwork'
+        commit_message: '[bot] Updated documentation from docs website'
