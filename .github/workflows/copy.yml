@@ -11,6 +11,7 @@ on:
 
 jobs:
   copy:
+    needs: build
     name: Copy basic documentation files
     runs-on: ubuntu-latest
     steps:
