@@ -177,10 +177,10 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       algolia: {
-        appId: 'BH4D9OD16A',
+        appId: 'CAV878E9J7',
 
         // Public API key: it is safe to commit it
-        apiKey: 'b66b35b94fe428fa43afc2032c61d3df',
+        apiKey: 'b3d6a0e4c92f0caadfab575dd86eff93',
 
         indexName: 'premail',
 
