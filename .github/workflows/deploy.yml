@@ -50,4 +50,4 @@ jobs:
         destination_folder: 'docs'
         user_email: 'git@rootwork.org'
         user_name: 'rootwork'
-        commit_message: 'Updated documentation files'
+        commit_message: '[bot] Updated documentation from docs website'
