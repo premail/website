@@ -180,7 +180,7 @@ const config = {
         appId: 'CAV878E9J7',
 
         // Public API key: it is safe to commit it
-        apiKey: 'b3d6a0e4c92f0caadfab575dd86eff93',
+        apiKey: 'e451b5a360deb6e5a7fbf4edf430abc1',
 
         indexName: 'premail',
 
