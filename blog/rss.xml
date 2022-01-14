@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Premail Blog</title>
-        <link>https://premail.github.io/blog</link>
+        <link>https://premail.dev/blog</link>
         <description>Premail Blog</description>
         <lastBuildDate>Thu, 16 Dec 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[Premail 2.0 released]]></title>
-            <link>https://premail.github.io/blog/premail-2.0-released</link>
+            <link>https://premail.dev/blog/premail-2.0-released</link>
             <guid>premail-2.0-released</guid>
             <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Premail]]></description>
@@ -17,7 +17,7 @@
         </item>
         <item>
             <title><![CDATA[Premail 2.0 is coming!]]></title>
-            <link>https://premail.github.io/blog/premail-2.0-coming</link>
+            <link>https://premail.dev/blog/premail-2.0-coming</link>
             <guid>premail-2.0-coming</guid>
             <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Premail]]></description>
