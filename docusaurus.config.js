@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/nightOwl');
 const config = {
   title: 'Premail',
   tagline: ' An easy-to-use component-based build system for MJML, the email templating language, with Handlebars templating, Sass styles, and extra options.',
-  url: 'https://premail.github.io',
+  url: 'https://premail.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
