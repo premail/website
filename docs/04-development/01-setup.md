@@ -1,8 +1,10 @@
 ---
+# Docusaurus settings
 title: Development setup
 sidebar_label: Setup
 slug: setup
 ---
+# Docusaurus settings
 
 Clone Premail's GitHub repo:
 

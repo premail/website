@@ -1,7 +1,9 @@
 ---
+# Docusaurus settings
 title: Project settings
 slug: project-settings
 ---
+# Docusaurus settings
 
 Look at the
 [`config.yaml`](https://github.com/premail/premail/blob/main/src/example/config.yaml)

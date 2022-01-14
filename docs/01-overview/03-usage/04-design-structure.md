@@ -1,8 +1,10 @@
 ---
+# Docusaurus settings
 title: Explore the structure of a design
 sidebar_label: Design structure
 slug: explore-design-structure
 ---
+# Docusaurus settings
 
 Look in the `designs` subdirectory. This will hold each of the designs
 (structure and styling) for your emails. For instance, you might have a

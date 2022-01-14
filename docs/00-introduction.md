@@ -1,8 +1,10 @@
 ---
+# Docusaurus settings
 sidebar_label: An introduction to Premail
 slug: introduction-to-premail
 title: ''
 ---
+# Docusaurus settings
 
 ![Premail](/img/logo_large.svg)
 
@@ -11,6 +13,7 @@ templating language, with Handlebars templating, Sass styles, and extra
 options.**
 
 ---
+# Docusaurus settings
 
 [MJML](https://mjml.io/) is a markup language for writing bulletproof HTML
 emails. It consciously does not incorporate a build process. This is that build
