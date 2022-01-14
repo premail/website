@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkPremailDocs=self.webpackChunkPremailDocs||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Premail 2.0 released","permalink":"/blog/premail-2.0-released"},{"title":"Premail 2.0 is coming!","permalink":"/blog/premail-2.0-coming"}]}')}}]);
