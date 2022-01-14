@@ -16,19 +16,41 @@ const config = {
   organizationName: 'premail', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/CODE_OF_CONDUCT',
+            from: ['/code_of_conduct'],
+          },
+          {
+            to: '/CONTRIBUTING',
+            from: ['/contributing'],
+          },
+          {
+            to: '/SECURITY',
+            from: ['/security'],
+          },
+        ],
+      },
+    ],
+  ],
+
   presets: [
     [
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/premail/website/tree/main/',
-        },
         blog: {
           showReadingTime: true,
           editUrl:
             'https://github.com/premail/website/tree/main/',
+        },
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/premail/website/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
