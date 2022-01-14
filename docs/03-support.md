@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Support and project help
 sidebar_label: Support
 slug: support-project-help

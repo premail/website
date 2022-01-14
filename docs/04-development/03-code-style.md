@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Premail code style and syntax
 sidebar_label: Code style and syntax
 slug: code-style-syntax

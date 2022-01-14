@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Premail license
 sidebar_label: License
 slug: license

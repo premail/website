@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Destroy a project
 sidebar_label: Destroy a project
 slug: destroy-project

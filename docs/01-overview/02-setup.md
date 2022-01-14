@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Setting up Premail
 sidebar_label: Setup
 slug: setting-up-premail

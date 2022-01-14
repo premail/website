@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Automatic code formatting and linting
 sidebar_label: Code formatting and linting
 slug: code-formatting-linting

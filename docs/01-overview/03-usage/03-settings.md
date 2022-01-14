@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Project settings
 slug: project-settings
 ---

@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Premail internal structure
 sidebar_label: Internal structure
 slug: internal-structure

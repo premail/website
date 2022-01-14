@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Custom MJML components in Premail
 sidebar_label: Summary
 slug: summary

@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Explore the structure of a design
 sidebar_label: Design structure
 slug: explore-design-structure

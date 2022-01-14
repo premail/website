@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Render the email for production
 sidebar_label: Render the email
 slug: render-production-email

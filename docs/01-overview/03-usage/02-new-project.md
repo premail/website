@@ -1,4 +1,5 @@
 ---
+# Docusaurus settings
 title: Create a new project
 slug: create-new-premail-project
 ---
