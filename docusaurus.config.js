@@ -15,7 +15,6 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'premail', // Usually your GitHub org/user name.
   projectName: 'website', // Usually your repo name.
-  trailingSlash: true,
 
   presets: [
     [
