@@ -192,7 +192,7 @@ const config = {
         // externalUrlRegex: 'external\\.com|domain\\.com',
 
         // Optional: Algolia search parameters
-        searchParameters: { 'facetFilters': ["type:content, lvl1, lvl2, lvl3, lvl5"] },
+        searchParameters: {},
       },
     }),
 };
