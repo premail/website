@@ -1,18 +1,14 @@
 ---
-# Docusaurus settings
 title: Resources
 sidebar_label: Resources
 slug: resources
 ---
-# Docusaurus settings
 
 ---
-# Docusaurus settings
 
 **A collection of email coding–related resources.**
 
 ---
-# Docusaurus settings
 
 :::info Add resources
 

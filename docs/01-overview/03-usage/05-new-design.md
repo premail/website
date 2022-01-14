@@ -1,9 +1,7 @@
 ---
-# Docusaurus settings
 title: Create a new design
 slug: create-a-new-design
 ---
-# Docusaurus settings
 
 If you're starting out for the first time and want to create a new design with
 the name "postmodern", as an example, you'd do the following in your console:

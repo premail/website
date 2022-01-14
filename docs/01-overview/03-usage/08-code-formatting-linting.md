@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Automatic code formatting and linting
 sidebar_label: Code formatting and linting
 slug: code-formatting-linting
 ---
-# Docusaurus settings
 
 Premail includes [sheerun/modern-node](https://github.com/sheerun/modern-node),
 which formats and lints code using [Prettier](https://prettier.io/). This will

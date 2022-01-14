@@ -1,9 +1,7 @@
 ---
-# Docusaurus settings
 title: Create a new project
 slug: create-new-premail-project
 ---
-# Docusaurus settings
 
 In your project folder, run the following:
 

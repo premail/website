@@ -1,9 +1,7 @@
 ---
-# Docusaurus settings
 title: The premail command
 slug: premail-command
 ---
-# Docusaurus settings
 
 Run `premail -h` to see this full list of options:
 

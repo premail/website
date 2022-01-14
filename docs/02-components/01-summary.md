@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Custom MJML components in Premail
 sidebar_label: Summary
 slug: summary
 ---
-# Docusaurus settings
 
 Premail includes some
 [MJML custom components](https://documentation.mjml.io/#creating-a-component)

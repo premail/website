@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Render the email for production
 sidebar_label: Render the email
 slug: render-production-email
 ---
-# Docusaurus settings
 
 In your console, append `--prod`, e.g. with a design named "postmodern," you'd
 use:

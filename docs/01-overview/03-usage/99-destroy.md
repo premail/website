@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Destroy a project
 sidebar_label: Destroy a project
 slug: destroy-project
 ---
-# Docusaurus settings
 
 This is generally only useful during testing, but there is a command to destroy all Premail-related directories and files within a project.
 

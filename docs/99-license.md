@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Premail license
 sidebar_label: License
 slug: license
 ---
-# Docusaurus settings
 
 **Premail.dev** is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

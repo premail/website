@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Premail code style and syntax
 sidebar_label: Code style and syntax
 slug: code-style-syntax
 ---
-# Docusaurus settings
 
 Premail includes [sheerun/modern-node](https://github.com/sheerun/modern-node),
 which formats and lints code using [Prettier](https://prettier.io/). This is

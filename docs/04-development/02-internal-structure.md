@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Premail internal structure
 sidebar_label: Internal structure
 slug: internal-structure
 ---
-# Docusaurus settings
 
 <https://github.com/premail/premail/tree/main>
 

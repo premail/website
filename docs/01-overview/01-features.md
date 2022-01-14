@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Premail features
 sidebar_label: Features
 slug: premail-features
 ---
-# Docusaurus settings
 
 :::tip MJML: The email coding system
 

@@ -1,10 +1,8 @@
 ---
-# Docusaurus settings
 title: Support and project help
 sidebar_label: Support
 slug: support-project-help
 ---
-# Docusaurus settings
 
 <!-- Note this is replicated at
      https://github.com/premail/premail/tree/main#getting-support
