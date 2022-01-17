@@ -5,7 +5,7 @@ slug: project-settings
 ---
 
 Look at the
-[`config.yaml`](https://github.com/premail/premail/blob/main/src/example/config.yaml)
+[`premail.yaml`](https://github.com/premail/premail/blob/main/src/example/premail.yaml)
 file at the root of your project you created.
 
 Here you'll find options for setting the names of your `designs` and `emails`
