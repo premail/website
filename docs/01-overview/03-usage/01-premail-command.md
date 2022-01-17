@@ -12,8 +12,9 @@ Run `premail -h` to see this full list of options:
 Usage: premail <command> [options]
 
 Commands:
-  premail build    Build your email                                    [default]
-  premail watch    Watch design and configuration files and rebuild as necessary
+  premail build    Build your email
+  premail watch    Watch design and configuration files and rebuild as
+                    necessary
   premail format   Format templates with Prettier
   premail clean    Remove generated files from the current design or email
   premail init     Initialize an email project
