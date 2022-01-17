@@ -7,19 +7,19 @@ slug: setting-up-premail
 
 ## Requirements
 
-Premail runs on Node. You'll need to have at least
-[Node](https://nodejs.org/en/download/) 12.x installed.
+Premail runs on Node. You'll need to have at
+[Node](https://nodejs.org/en/download/) 12.x or 14.x installed.
 
 :::info Node versions
 
-Premail has been tested up to 16.x and appears to work, with the caveat that
-**if you want to be able to use the `watch` function you need to stay at
+Premail works with Node 12.x or 14.x.
+**If you want to be able to use the `watch` function you need to stay at
 [Node 12.x](https://github.com/nodejs/Release#release-schedule)** because of a
 [limitation in gulp](https://github.com/gulpjs/glob-watcher/issues/55). (This
 means you'll see an unfortunate number of depreciation warnings upon
 installation.)
 
-If you don't need to use `watch`, you can run Node LTS.
+If you don't need to use `watch`, you can run Node 14.x. At this time, Premail will not run on Node 15.x or above.
 
 We recommend using [n](https://github.com/tj/n) or
 [nvm](https://github.com/nvm-sh/nvm) if you're managing multiple versions of

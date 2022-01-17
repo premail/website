@@ -15,7 +15,7 @@ Run `node --version` to determine your release of Node and install if necessary.
 
 :::info Node versions
 
-Premail requires at least version 12.x. See
+Premail requires Node version 12.x or 14.x. See
 [Premail setup](/docs/overview/setting-up-premail/) for more.
 
 :::
