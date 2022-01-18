@@ -21,6 +21,8 @@ installation.)
 
 If you don't need to use `watch`, you can run Node 14.x. At this time, Premail will not run on Node 15.x or above.
 
+_Want to help us in removing these restrictions? See issues [#56](https://github.com/premail/premail/issues/56) and [#57](https://github.com/premail/premail/issues/57) on GitHub._
+
 We recommend using [n](https://github.com/tj/n) or
 [nvm](https://github.com/nvm-sh/nvm) if you're managing multiple versions of
 Node.
