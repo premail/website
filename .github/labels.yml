@@ -16,6 +16,10 @@
 - name: 'Type: Build Process'
   color: 7985cb
   description: 'Docusaurus, GitHub Actions and other tools used to create the docs.'
+- name: 'Type: Question'
+  color: 80ff00
+  description:
+    'General questions about the documentation.'
 
 # Status
 
