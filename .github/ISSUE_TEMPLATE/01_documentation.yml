@@ -26,3 +26,9 @@ body:
         Summarize your suggested changes below, or open a Pull Request and include a link to it here.
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        **Thank you!**
