@@ -32,33 +32,33 @@ though, all you'll need to know is MJML.
   email -- top and bottom navigation menus, social media links, and the footer
   area. Depending on how you prefer to create your designs, you might opt to
   never change these components in a given design.
-
-### Theme
-
-The `theme` subdirectory contains two sets of files: Configuration and styles.
-
-- `theme/themeConfig.yaml` controls settings for your design's theme. In order
+- `designConfig.yaml` controls settings for your design. In order
   to render bulletproof email code, MJML sets some styles directly on elements,
   and uses inlined CSS on others. To make it easier to quickly create a new
   design, or slightly alter an existing one, this file lists the most common
   styles for a design, which are then mapped automatically to the appropriate
   locations in MJML and CSS. If there are styles you want to add or change that
-  aren't listed here, your next step should be the Sass files.
+  aren't listed here, your next step should be the Sass files inside `theme`.
+
+### Theme
+
+The `theme` subdirectory contains two sets of files: styles and configuration.
+
 - `theme/*.scss` files are [Sass files](https://sass-lang.com/guide) that make
   individual changes to CSS. If you're not familiar with Sass, the `scss` syntax
   used here is
   [a superset of CSS](https://sass-lang.com/documentation/syntax#scss) -- so any
-  valid CSS can be placed in these files. If you peruse them, you'll see that
+  valid CSS can be placed in these files. If you read through them, you'll see that
   they use Sass to import variables from your theme configuration, but you can
   ignore or overwrite these styles if you wish. The Sass files are heavily
-  commented to make it clear which styles they control.
+  commented to make it clear which styles they control. Most styles you'll want to control are in the `inline.scss` file, because these are the styles MJML will inline to maximize email client compatibility.
 - `theme/*.hbs` files are Handlebars files with MJML markup that load settings
-  from `themeConfig.yaml` into MJML itself. If you have a style that you can't
+  from `designConfig.yaml` into MJML itself. If you have a style that you can't
   seem to change, check these files. They are included in the `index.hbs` file
   automatically.
 
 Finally, note that some attributes must be set on `<mj-wrapper>` elements for
 each component directly in the `index.hbs` file. In every case, these are
-loading settings from `themeConfig.yaml`, so it should be easiest to change
+loading settings from `designConfig.yaml`, so it should be easiest to change
 styles there -- but if you need to alter or add something like a CSS class, take
 a look at what's being defined in `index.hbs`.
