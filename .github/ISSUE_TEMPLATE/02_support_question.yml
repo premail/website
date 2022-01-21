@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Note this is the issue queue for the Premail website located at [https://premail.dev](https://premail.dev) -- if you have a question about Premail itself, please [file it at premail/premail](https://github.com/premail/premail/issues/new).**
+        **Note this is the issue queue for the Premail website located at [https://premail.dev](https://premail.dev) -- if you have a question about Premail itself, please [file it at premail/premail](https://github.com/premail/premail/issues/new/choose).**
   - type: textarea
     id: question
     attributes:
