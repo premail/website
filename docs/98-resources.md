@@ -49,6 +49,7 @@ Feel free to [edit this page](https://github.com/premail/website/tree/main/docs/
 
 Similar CLI-based email-creation projects like Premail, languages used, and last commit:
 
+- [Maizzle](https://github.com/maizzle/framework): PostHTML, Tailwind CSS, JS/Node, YAML ![GitHub last commit](https://img.shields.io/github/last-commit/maizzle/framework?style=flat-square)
 - [Balena](https://github.com/balena-io/balena-emails): MJML, Handlebars, Mailchimp-optimized ![GitHub last commit](https://img.shields.io/github/last-commit/balena-io/balena-emails?style=flat-square)
 - [Email Generator](https://github.com/mikecabana/email-generator): MJML, Handlebars, TypeScript ![GitHub last commit](https://img.shields.io/github/last-commit/mikecabana/email-generator?style=flat-square)
 - [MJML Handlebars Emails](https://github.com/pkelleter/mjml-handlebars-emails): MJML, Handlebars ![GitHub last commit](https://img.shields.io/github/last-commit/pkelleter/mjml-handlebars-emails?style=flat-square)
