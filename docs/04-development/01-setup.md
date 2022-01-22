@@ -53,4 +53,6 @@ need to uninstall Premail globally first). This is actually
 to make sure each commit doesn't break basic functionality.
 
 The commands `premail init` and `premail destroy --yes` are helpful in quickly
-setting up and tearing down test projects.
+setting up and tearing down test projects. If you change anything in the
+`src/example` directory, for instance, you'll need to destroy and recreate a
+project in order to pick up those changes.
