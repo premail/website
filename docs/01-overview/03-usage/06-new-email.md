@@ -21,4 +21,4 @@ premail new email special_offer -d postmodern
 
 This creates an email using the `postmodern` design. If you don't specify the
 `-d` (or `--design`) flag, premail will build an email using the default design
-specified in your `premail.yaml` file.
+[specified in your `premail.yaml` file](/docs/overview/usage/project-settings).

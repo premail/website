@@ -20,7 +20,8 @@ premail new design postmodern
 ```
 
 This will create a new subdirectory of `designs` (or the design directory
-specified in your `premail.yaml` file) with stub files for your new design.
+[specified in your `premail.yaml` file](/docs/overview/usage/project-settings))
+with stub files for your new design.
 
 Want to create a design based on an existing one? Just add the `-d` or
 `--design` flag:
