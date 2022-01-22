@@ -11,8 +11,9 @@ slug: internal-structure
   [yargs](https://yargs.js.org) to pass tasks and other functions to the
   `premail` command.
 - [`gulpfile.js`](https://github.com/premail/premail/blob/main/gulpfile.js)
-  defines tasks for [gulp](https://gulpjs.com/). Some functions run outside of
-  gulp.
+  defines tasks for [gulp](https://gulpjs.com/). Not all Premail functions are
+  gulp tasks, for instance `premail init` and `premail destroy` are referenced
+  directly from `index.js` and don't run through gulp.
 - [`.mjmlconfig`](https://github.com/premail/premail/blob/main/.mjmlconfig)
   defines the [custom MJML components](/docs/components/summary/) we use.
 - Other root-level dot-files should be self-explanatory.
@@ -35,12 +36,9 @@ slug: internal-structure
   - [`settings`](https://github.com/premail/premail/blob/main/src/settings) are
     internal default settings for Premail, stored in YAML format.
   - [`tasks`](https://github.com/premail/premail/blob/main/src/tasks) correspond
-    to `premail` commands. Some of these are gulp tasks, and some are pure Node
-    functions.
+    to `premail` commands. Some of these are gulp tasks, and some are just Node
+    JS files.
 - [`README.md`](https://github.com/premail/premail/blob/main/README.md) contains
   basic project documentation. The repo for this site (https://premail.dev),
-  which is built with [Docusaurus](https://docusaurus.io/), is located on
-  [the docs branch](https://github.com/premail/premail/tree/docs), and a GitHub
-  Action automatically deploys it to
-  [the gh-pages branch](https://github.com/premail/premail/tree/gh-pages) on
-  every new commit.
+  which is built with [Docusaurus](https://docusaurus.io/), is a separate repo:
+  [premail/website](https://github.com/premail/website/).
