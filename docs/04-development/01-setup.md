@@ -47,7 +47,7 @@ Premail repo, for instance called `test`. Then use
 [reference your _local version_ of Premail](https://dev.to/erinbush/npm-linking-and-unlinking-2h1g),
 rather than the current npm version.
 
-Alternatively, use `npm install -g i .` within your local Premail repo (you'll
+Alternatively, use `npm install -g .` within your local Premail repo (you'll
 need to uninstall Premail globally first). This is actually
 [what Premail does in a GitHub Action](https://github.com/premail/premail/blob/main/.github/workflows/node.yml#L35)
 to make sure each commit doesn't break basic functionality.
