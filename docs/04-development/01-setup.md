@@ -5,6 +5,10 @@ sidebar_label: Setup
 slug: setup
 ---
 
+If you want to help contribute to Premail's development, great! (If you just
+want to learn how to install and use Premail,
+[head over here](/docs/overview/setting-up-premail).)
+
 Clone Premail's GitHub repo:
 
 ```sh
@@ -20,12 +24,33 @@ Premail requires Node version 12.x or 14.x. See
 
 :::
 
-In your development directory, run:
+In your local copy of the Premail repo, run:
 
 ```bash
 npm install
 ```
 
-If you don't already have syntax highlighting for MJML, there are
-[plugins](https://documentation.mjml.io/#applications-and-plugins) for Visual
-Studio Code, Atom, and Sublime Text 3 and 4.
+:::tip Editor plugins
+
+MJML has [plugins](https://documentation.mjml.io/#applications-and-plugins) for
+Visual Studio Code, Atom, and Sublime Text 3 and 4 that will help with things
+like syntax highlighting.
+
+:::
+
+## Testing your work
+
+As you develop, you'll want to test that the `premail` command is still working.
+To do this, set up a separate directory outside of your local copy of the
+Premail repo, for instance called `test`. Then use
+[`npm link`](https://docs.npmjs.com/cli/v6/commands/npm-link) to
+[reference your _local version_ of Premail](https://dev.to/erinbush/npm-linking-and-unlinking-2h1g),
+rather than the current npm version.
+
+Alternatively, use `npm install -g i .` within your local Premail repo (you'll
+need to uninstall Premail globally first). This is actually
+[what Premail does in a GitHub Action](https://github.com/premail/premail/blob/main/.github/workflows/node.yml#L35)
+to make sure each commit doesn't break basic functionality.
+
+The commands `premail init` and `premail destroy --yes` are helpful in quickly
+setting up and tearing down test projects.
