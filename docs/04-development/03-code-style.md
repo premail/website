@@ -28,8 +28,8 @@ should clean up and format various language files appropriately:
   (which does, in fact, work with Dart Sass) to import variables from
   configuration files into the Sass files. See
   [`src/config/sassImport.js`](https://github.com/premail/premail/tree/main/src/config/sassImport.js)
-  and the `sass()` function in
-  [`src/tasks/build.js`](https://github.com/premail/premail/tree/main/src/tasks/build.js)
+  and the
+  [`sass()` function in `src/tasks/build.js`](https://github.com/premail/premail/blob/main/src/tasks/build.js#L57-L67)
   for the implementation.
 - YAML and Markdown files are wrapped when possible at 80 characters. This is
   enforced with Prettier.
