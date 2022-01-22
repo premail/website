@@ -13,7 +13,13 @@
             <guid>premail-2.0-released</guid>
             <pubDate>Thu, 16 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Premail]]></description>
-            <content:encoded><![CDATA[<p><img src="./logo.png" alt="Premail"/></p><p>Premail version 2.0 is out! Take a look at <a href="https://www.npmjs.com/package/premail">npm</a> or <a href="https://github.com/premail/premail">GitHub</a>.</p><p>Compared to where this started, Premail is a completely new tool with a new name, so this is really more like a v1 of a full-featured tool.</p><p>And, transparently, there are still some known bugs. I&#x27;m going to try to create <a href="https://github.com/premail/premail/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">issues</a> for these in the coming days, but I wanted to get a v2 release out the door so that the npm package could be properly updated.</p><p>More to come!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p><img src="./logo.png" alt="Premail"/></p><p>Premail version 2.0 is out! Take a look at
+<a href="https://www.npmjs.com/package/premail">npm</a> or
+<a href="https://github.com/premail/premail">GitHub</a>.</p><p>Compared to where this started, Premail is a completely new tool with a new
+name, so this is really more like a v1 of a full-featured tool.</p><p>And, transparently, there are still some known bugs. I&#x27;m going to try to create
+<a href="https://github.com/premail/premail/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc">issues</a>
+for these in the coming days, but I wanted to get a v2 release out the door so
+that the npm package could be properly updated.</p><p>More to come!</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Premail 2.0 is coming!]]></title>
