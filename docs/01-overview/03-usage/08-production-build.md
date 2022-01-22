@@ -1,29 +1,21 @@
 ---
 # Docusaurus settings
-title: Render the email for production
-sidebar_label: Render the email
-slug: render-production-email
+title: Production build of your email
+sidebar_label: Production build
+slug: production-build-email
 ---
 
-In your console, append `--prod`, e.g. with a design named "postmodern," you'd
-use:
+Once you've finished editing your email, create a production-ready copy, e.g.
+with an email named "special_offer" and a design named "postmodern", you'd use:
 
 ```sh
-premail build -d postmodern --prod
+premail build -e special_offer -d postmodern --prod
 ```
 
 This will render `index.html`
 [in minified form](https://github.com/mjmlio/mjml/blob/master/packages/mjml-cli/README.md#minify-and-beautify-the-output-html)
 in the `dist` subdirectory, and (if you've chosen to have one created),
 `index.txt`.
-
-:::caution Email images
-
-Images can be included locally while you're drafting the email, but MJML doesn't
-do anything magical in terms of hosting these images -- you'll still have to
-upload them somewhere and use the full URLs as references to the hosted images.
-
-:::
 
 Once the production email is rendered, you can:
 
@@ -35,5 +27,5 @@ Once the production email is rendered, you can:
 - Upload the files as part of a repo and use something like
   [GitHub Pages](https://pages.github.com/) to view/share it in a browser -- for
   instance
-  [here's the rendered file](https://github.com/premail/premail/blob/main/designs/_templates/dist/index.html)
+  [here's the rendered file](https://refined-github-html-preview.kidonng.workers.dev/premail/premail/raw/main/src/example/designs/_default/dist/index.html)
   from the sample templates.
