@@ -48,7 +48,10 @@ The `theme` subdirectory contains two sets of files: styles and configuration.
   individual changes to CSS. If you're not familiar with Sass, the `scss` syntax
   used here is
   [a superset of CSS](https://sass-lang.com/documentation/syntax#scss) -- so any
-  valid CSS can be placed in these files. If you read through them, you'll see that they use Sass to import variables from your theme configuration, but you can ignore or overwrite these styles if you wish. The Sass files are heavily commented to make it clear which styles they control. Most styles you'll want
+  valid CSS can be placed in these files. If you read through them, you'll see
+  that they use Sass to import variables from your theme configuration, but you
+  can ignore or overwrite these styles if you wish. The Sass files are heavily
+  commented to make it clear which styles they control. Most styles you'll want
   to control are in the `inline.scss` file, because these are the styles MJML
   will inline to maximize email client compatibility.
 - `theme/*.hbs` files are Handlebars files with MJML markup that load settings

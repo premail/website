@@ -24,7 +24,8 @@ This will watch for any changes in any configuration files, template files
 re-render the `dist` subdirectory of your design. You can leave a web browser
 open to this page.
 
-If you don't want to continuously watch your files, use `premail build`. Again, using the "postmodern" example, that would be:
+If you don't want to continuously watch your files, use `premail build`. Again,
+using the "postmodern" example, that would be:
 
 ```sh
 premail build -d postmodern

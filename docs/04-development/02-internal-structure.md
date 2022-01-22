@@ -16,8 +16,8 @@ slug: internal-structure
 - [`.mjmlconfig`](https://github.com/premail/premail/blob/main/.mjmlconfig)
   defines the [custom MJML components](/docs/components/summary/) we use.
 - Other root-level dot-files should be self-explanatory.
-- [`src`](https://github.com/premail/premail/blob/main/src) contains the
-  program itself.
+- [`src`](https://github.com/premail/premail/blob/main/src) contains the program
+  itself.
   - [`config`](https://github.com/premail/premail/blob/main/src/config)
     functions load and process configuration from command-line, internal, and
     user-facing file sources.
@@ -29,18 +29,17 @@ slug: internal-structure
   - [`helpers`](https://github.com/premail/premail/blob/main/src/helpers) are
     small utility functions, usually from other sources, that don't rely on
     anything specific to Premail to run.
-  - [`ops`](https://github.com/premail/premail/blob/main/src/ops) are a kind
-    of catch-all internal function category: error handling, command-line flags,
+  - [`ops`](https://github.com/premail/premail/blob/main/src/ops) are a kind of
+    catch-all internal function category: error handling, command-line flags,
     console notification and variable validation.
-  - [`settings`](https://github.com/premail/premail/blob/main/src/settings)
-    are internal default settings for Premail, stored in YAML format.
-  - [`tasks`](https://github.com/premail/premail/blob/main/src/tasks)
-    correspond to `premail` commands. Some of these are gulp tasks, and some are
-    pure Node functions.
-- [`README.md`](https://github.com/premail/premail/blob/main/README.md)
-  contains basic project documentation. The repo for this site
-  (https://premail.dev), which is built with
-  [Docusaurus](https://docusaurus.io/), is located on
+  - [`settings`](https://github.com/premail/premail/blob/main/src/settings) are
+    internal default settings for Premail, stored in YAML format.
+  - [`tasks`](https://github.com/premail/premail/blob/main/src/tasks) correspond
+    to `premail` commands. Some of these are gulp tasks, and some are pure Node
+    functions.
+- [`README.md`](https://github.com/premail/premail/blob/main/README.md) contains
+  basic project documentation. The repo for this site (https://premail.dev),
+  which is built with [Docusaurus](https://docusaurus.io/), is located on
   [the docs branch](https://github.com/premail/premail/tree/docs), and a GitHub
   Action automatically deploys it to
   [the gh-pages branch](https://github.com/premail/premail/tree/gh-pages) on

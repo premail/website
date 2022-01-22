@@ -12,16 +12,19 @@ Premail runs on Node. You'll need to have at
 
 :::info Node versions
 
-Premail works with Node 12.x or 14.x.
-**If you want to be able to use the `watch` function you need to stay at
+Premail works with Node 12.x or 14.x. **If you want to be able to use the
+`watch` function you need to stay at
 [Node 12.x](https://github.com/nodejs/Release#release-schedule)** because of a
 [limitation in gulp](https://github.com/gulpjs/glob-watcher/issues/55). (This
 means you'll see an unfortunate number of depreciation warnings upon
 installation.)
 
-If you don't need to use `watch`, you can run Node 14.x. At this time, Premail will not run on Node 15.x or above.
+If you don't need to use `watch`, you can run Node 14.x. At this time, Premail
+will not run on Node 15.x or above.
 
-_Want to help us in removing these restrictions? See issues [#56](https://github.com/premail/premail/issues/56) and [#57](https://github.com/premail/premail/issues/57) on GitHub._
+_Want to help us in removing these restrictions? See issues
+[#56](https://github.com/premail/premail/issues/56) and
+[#57](https://github.com/premail/premail/issues/57) on GitHub._
 
 We recommend using [n](https://github.com/tj/n) or
 [nvm](https://github.com/nvm-sh/nvm) if you're managing multiple versions of
