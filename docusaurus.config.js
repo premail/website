@@ -33,6 +33,10 @@ const config = {
             to: '/SECURITY',
             from: ['/security'],
           },
+          {
+            to: '/CHANGELOG',
+            from: ['/changelog'],
+          },
         ],
       },
     ],
@@ -141,6 +145,10 @@ const config = {
               {
                 label: 'Premail development guide',
                 to: '/docs/components/summary/',
+              },
+              {
+                label: 'Changelog',
+                to: '/changelog/',
               },
               {
                 label: 'Thanks & appreciation',
