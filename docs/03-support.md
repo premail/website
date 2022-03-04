@@ -9,12 +9,16 @@ slug: support-project-help
      https://github.com/premail/premail/tree/main#getting-support
      so be sure to update it there as well. -->
 
+## How to get help with Premail
+
 :::tip Get help
 
 **[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=Type%3A+Question&template=03_support_question.yml&title=support%3A+)**
 on GitHub if you're stuck.
 
 :::
+
+## How to support Premail in getting even better
 
 If you want to say **thank you** and/or support active development of Premail:
 
