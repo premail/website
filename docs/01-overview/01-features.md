@@ -82,4 +82,4 @@ controlled per-email:
   recipient's inbox.
 
 Feel free to
-[make suggestions for more enhancements!](https://github.com/premail/premail/issues/new?assignees=&labels=Type%3A+Feature&template=02_feature_request.yml&title=feat%3A+)
+[make suggestions for more enhancements!](https://github.com/premail/premail/issues/new?assignees=&labels=Type%3A+Feature&template=02_feature_request.yml)

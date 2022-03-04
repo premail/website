@@ -13,7 +13,7 @@ slug: support-project-help
 
 :::tip Get help
 
-**[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=Type%3A+Question&template=03_support_question.yml&title=support%3A+)**
+**[Ask a support question](https://github.com/premail/premail/issues/new?assignees=&labels=Type%3A+Question&template=03_support_question.yml)**
 on GitHub if you're stuck.
 
 :::
