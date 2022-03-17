@@ -28,7 +28,7 @@ under [MJML version 4](https://github.com/mjmlio/mjml/releases).
 
 One `index.html` file will be rendered, as well as (optionally) a plain-text
 version, ready to import into your emailer of choice.
-[See an example of the default layout.](https://refined-github-html-preview.kidonng.workers.dev/premail/premail/raw/main/src/example/designs/_default/dist/index.html)
+[See an example of the default layout.](https://refined-github-html-preview.kidonng.workers.dev/premail/premail/raw/main/src/scaffolding/project/designs/_default/dist/index.html)
 
 :::
 
