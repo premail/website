@@ -4,7 +4,7 @@ title: The premail command
 slug: premail-command
 ---
 
-Run `premail -h` to see this full list of options:
+Run `premail -h` to see all commands and options:
 
 <!-- prettier-ignore-start -->
 <!-- markdown-exec(cmd:echo '<'!'-- '-'->\n```' && premail -h && echo '```\n<'!'-- '-'->') --><!-- -->
