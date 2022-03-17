@@ -22,4 +22,5 @@ jobs:
       - name: Test build
         run: |
           yarn install --frozen-lockfile
+          yarn run premail-output-update
           yarn build

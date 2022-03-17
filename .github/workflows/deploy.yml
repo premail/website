@@ -22,6 +22,7 @@ jobs:
       - name: Build website
         run: |
           yarn install --frozen-lockfile
+          yarn run premail-output-update
           yarn build
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy to GitHub Pages
