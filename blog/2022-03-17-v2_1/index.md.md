@@ -49,6 +49,14 @@ emails you created with prior versions will continue to work.
 That said, there are many more theming features in the Premail's newest example
 design and email, so be sure to upgrade before you start your next one!
 
+### How to upgrade Premail
+
+```sh
+npm update premail -g
+```
+
+Happy Premailing!
+
 ---
 
 **Full list of changes available on the [changelog](/changelog/).**
