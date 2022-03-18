@@ -25,7 +25,8 @@ having to crack open Handlebars partials, MJML attributes or Sass files
 <a href="https://github.com/premail/mjml-bullet-list/releases/tag/v1.2.2">1.2.2</a></li><li>mjml-signoff from 1.1.5 to
 <a href="https://github.com/premail/mjml-signoff/releases/tag/v1.2.3">1.2.3</a></li></ul><h3>Backwards-compatibility</h3><p>As this is a minor release, there are no breaking changes, and any designs or
 emails you created with prior versions will continue to work.</p><p>That said, there are many more theming features in the Premail&#x27;s newest example
-design and email, so be sure to upgrade before you start your next one!</p><hr/><p><strong>Full list of changes available on the <a href="/changelog/">changelog</a>.</strong></p><hr/>]]></content:encoded>
+design and email, so be sure to upgrade before you start your next one!</p><h3>How to upgrade Premail</h3><pre><code class="language-sh">npm update premail -g
+</code></pre><p>Happy Premailing!</p><hr/><p><strong>Full list of changes available on the <a href="/changelog/">changelog</a>.</strong></p><hr/>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Premail 2.0 released]]></title>
