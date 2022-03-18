@@ -26,4 +26,5 @@ premail new email welcome -e _example
 
 This creates a new email named `welcome` with the content of the
 [example email](https://github.com/premail/premail/tree/main/src/scaffolding/project/emails/_example)
-included with Premail.
+included with Premail. Using this option, you can quickly create a new email
+based on the content of a previous email, then change what you need.
