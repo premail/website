@@ -12,7 +12,7 @@ features!
 
 ### New features:
 
-- An **85%** reduction in package size thanks to many fewer dependencies and a
+- An **22%** reduction in package size thanks to many fewer dependencies and a
   slimmer file structure!
 - [`premail new design`](/docs/overview/usage/create-a-new-design)
 - [`premail new email`](/docs/overview/usage/create-a-new-email)
