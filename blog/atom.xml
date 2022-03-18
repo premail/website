@@ -15,7 +15,7 @@
         <summary type="html"><![CDATA[🍀 Premail version 2.1.0 has been released with a pot o' gold full of new]]></summary>
         <content type="html"><![CDATA[<p>🍀 Premail version 2.1.0 has been released with a pot o&#x27; gold full of new
 features!</p><p><strong>Get Premail from <a href="https://www.npmjs.com/package/premail">npm</a> or
-<a href="https://github.com/premail/premail">GitHub</a></strong></p><h3>New features:</h3><ul><li>An <strong>85%</strong> reduction in package size thanks to many fewer dependencies and a
+<a href="https://github.com/premail/premail">GitHub</a></strong></p><h3>New features:</h3><ul><li>An <strong>22%</strong> reduction in package size thanks to many fewer dependencies and a
 slimmer file structure!</li><li><a href="/docs/overview/usage/create-a-new-design"><code>premail new design</code></a></li><li><a href="/docs/overview/usage/create-a-new-email"><code>premail new email</code></a></li><li>A more reliable <code>premail watch</code> -- with integrated
 <a href="https://browsersync.io/">Browsersync</a>!</li><li>Many more design settings are now configurable from within Premail without
 having to crack open Handlebars partials, MJML attributes or Sass files
