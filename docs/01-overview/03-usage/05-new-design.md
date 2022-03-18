@@ -50,7 +50,13 @@ premail build -d postmodern
 
 This will render the design, open it in a browser and then stop.
 
-If you need to troubleshoot the rendered design template (that is, after the
-Handlebars data has been inserted, but before the MJML-to-HTML transpiling)
-append `--temp` to a command and it will include an `index.mjml` file in `dist`
-subdirectory so you can see exactly what is being passed to MJML.
+:::info Inspecting the compiled MJML
+
+Because Premail assembles several files together, it can sometimes be helpful to
+see what the final compiled MJML template is -- before it's passed to MJML to
+render in email-friendly HTML.
+
+To see this file, append `--temp` to any `watch` or `build` command and the
+compiled `index.mjml` file will be included in `dist`.
+
+:::
