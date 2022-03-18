@@ -1,7 +1,7 @@
 ---
 # Docusaurus settings
 title: Development setup
-sidebar_label: Setup
+sidebar_label: Preparing a development setup
 slug: setup
 ---
 
@@ -49,10 +49,10 @@ rather than the current npm version.
 
 Alternatively, use `npm install -g .` within your local Premail repo (you'll
 need to uninstall Premail globally first). This is actually
-[what Premail does in a GitHub Action](https://github.com/premail/premail/blob/main/.github/workflows/node.yml#L35)
+[what Premail does in a GitHub Action](https://github.com/premail/premail/blob/main/.github/workflows/node.yml#L37)
 to make sure each commit doesn't break basic functionality.
 
-The commands `premail init` and `premail destroy --yes` are helpful in quickly
-setting up and tearing down test projects. If you change anything in the
-`src/example` directory, for instance, you'll need to destroy and recreate a
-project in order to pick up those changes.
+The commands `premail init` and `premail destroy --yes --readme` are helpful in
+quickly setting up and tearing down test projects. If you change anything in the
+`src/scaffolding/project` directory, for instance, you'll need to destroy and
+recreate a project in order to pick up those changes.

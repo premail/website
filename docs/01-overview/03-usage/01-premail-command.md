@@ -4,7 +4,7 @@ title: The premail command
 slug: premail-command
 ---
 
-Run `premail -h` to see this full list of options:
+Run `premail -h` to see all commands and options:
 
 <!-- prettier-ignore-start -->
 <!-- markdown-exec(cmd:echo '<'!'-- '-'->\n```' && premail -h && echo '```\n<'!'-- '-'->') --><!-- -->
@@ -12,27 +12,37 @@ Run `premail -h` to see this full list of options:
 Usage: premail <command> [options]
 
 Commands:
-  premail build    Build your email
-  premail watch    Watch design and configuration files and rebuild as
-                    necessary
-  premail format   Format templates with Prettier
-  premail clean    Remove generated files from the current design or email
-  premail init     Initialize an email project
-  premail destroy  Destroy an email project
+  premail new <email|design> <dest>  Create a new email or design in <dest>
+  premail build                      Build an email
+  premail watch                      Watch design and configuration files and
+                                     rebuild as necessary
+  premail clean                      Remove generated files from the current
+                                     design or email
+  premail paths                      List paths being used with the current
+                                     configuration and command-line flags
+  premail format                     Format templates with Prettier
+  premail init                       Initialize a Premail project
+  premail destroy                    Destroy this Premail project
 
-Email project build and watch:
-  -d, --design  Specify design directory to use   [string] [default: "_default"]
-  -e, --email   Specify email directory to render                       [string]
-  -p, --prod    Render production files (minified, no comments)        [boolean]
-      --debug   Append to any command to see verbose details           [boolean]
+Email development:
+  -d, --design    Specify design directory to use [string] [default: "_default"]
+  -e, --email     Specify email directory to use                        [string]
+  -p, --prod      Render production files (minified, no comments)      [boolean]
+  -s, --noserve   Disable serving rendered email via browserSync       [boolean]
+  -f, --noformat  Disable auto-formatting of files using Prettier      [boolean]
+      --debug     Append to any command to see verbose details         [boolean]
 
 Design development:
       --temp  Include intermediate rendered template (post-Handlebars, pre-MJML)
               in output                                                [boolean]
 
+New emails and designs:
+  -d, --design  Specify design directory to use   [string] [default: "_default"]
+  -e, --email   Specify email directory to use                          [string]
+
 More information:
-  -h, --help     Show help                                             [boolean]
   -v, --version  Show version number                                   [boolean]
+  -h, --help     Show help                                             [boolean]
 
 Additional documentation: https://premail.dev
 ```

@@ -49,7 +49,8 @@ into it, you can install it locally with:
 npm install premail --save-dev
 ```
 
-You are also free to fork this repo and alter it to fit your needs.
+You are also free to [fork the GitHub repo](https://github.com/premail/premail)
+and alter it to fit your needs.
 
 :::tip Editor plugins
 

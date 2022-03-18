@@ -12,5 +12,12 @@ At the top-level of your project, run `premail destroy` and after confirmation,
 it will remove everything
 [`premail init`](/docs/overview/usage/create-new-premail-project/) created.
 
-`premail destroy --yes` will skip the confirmation step and destroy the project
-immediately. Use with care.
+There is a separate step to ask whether to remove `README.md` from the project,
+as this may have been adapted for other purposes.
+
+:::warning Destroy immediately
+
+`premail destroy --yes --readme` will skip the confirmation steps and destroy
+the project and `README.md` file immediately. Use with care.
+
+:::

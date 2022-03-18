@@ -1,7 +1,7 @@
 ---
 # Docusaurus settings
 title: Support and project help
-sidebar_label: Support
+sidebar_label: Premail support
 slug: support-project-help
 ---
 

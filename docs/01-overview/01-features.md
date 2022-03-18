@@ -39,12 +39,15 @@ Then drop the code from the file into your email service provider's system.
   things that will usually change (a header or banner, preheader text, and the
   main body of the email).
 
-- You can create multiple designs, and each time you create a new email you can
-  choose from among your existing designs. This allows you to keep the structure
-  of the design and the content of the email separate, and reduces errors.
+- Create multiple designs, and each time you create a new email you can choose
+  from among your existing designs. This allows you to keep the structure of the
+  design and the content of the email separate, and reduces errors.
 
 - As you're creating a design or crafting a new email, you can use a `watch`
-  task to automatically recompile the result.
+  task to automatically recompile the result, which is loaded using
+  [Browsersync](https://browsersync.io/) into your default browser as well as
+  being accessible from other devices. (If you'd rather not use Browsersync,
+  it's easy to disable.)
 
 - Within each design, the CSS (created in [Sass files](https://sass-lang.com/))
   is automatically inlined in the HTML, thanks to MJML. Additionally, stub files

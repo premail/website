@@ -1,6 +1,6 @@
 {
   "name": "Premail.dev",
-  "version": "1.0.1",
+  "version": "2.1.0",
   "private": false,
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "premail-output-update": "markdown-exec ./docs/01-overview/03-usage/01-premail-command.md",
     "format": "modern format",
     "lint": "modern lint",
     "precommit": "modern precommit"
@@ -30,6 +31,7 @@
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
     "husky": "^7.0.4",
+    "markdown-exec": "^1.0.2",
     "modern-node": "^2.9.0",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
