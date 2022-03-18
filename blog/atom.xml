@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://premail.dev/blog</id>
     <title>Premail Blog</title>
-    <updated>2021-12-16T00:00:00.000Z</updated>
+    <updated>2022-03-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://premail.dev/blog"/>
     <subtitle>Premail Blog</subtitle>
     <icon>https://premail.dev/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Premail 2.1.0 released ☘]]></title>
+        <id>premail-2.1.0-released</id>
+        <link href="https://premail.dev/blog/premail-2.1.0-released"/>
+        <updated>2022-03-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🍀 Premail version 2.1.0 has been released with a pot o' gold full of new]]></summary>
+        <content type="html"><![CDATA[<p>🍀 Premail version 2.1.0 has been released with a pot o&#x27; gold full of new
+features!</p><p><strong>Get Premail from <a href="https://www.npmjs.com/package/premail">npm</a> or
+<a href="https://github.com/premail/premail">GitHub</a></strong></p><h3>New features:</h3><ul><li>An <strong>85%</strong> reduction in package size thanks to many fewer dependencies and a
+slimmer file structure!</li><li><a href="/docs/overview/usage/create-a-new-design"><code>premail new design</code></a></li><li><a href="/docs/overview/usage/create-a-new-email"><code>premail new email</code></a></li><li>A more reliable <code>premail watch</code> -- with integrated
+<a href="https://browsersync.io/">Browsersync</a>!</li><li>Many more design settings are now configurable from within Premail without
+having to crack open Handlebars partials, MJML attributes or Sass files
+(unless you want to!)</li></ul><h3>Fixed bugs:</h3><ul><li>Support for design or email names consisting only of numbers (like &quot;2022&quot;).</li><li>Ensuring MJML is picking up all design configuration.</li><li>Fixing some design regressions in 2.0.4 and 2.0.5.</li><li>Fixing a bug with <code>premail clean</code>.</li></ul><h3>Notable dependency updates:</h3><ul><li>MJML from 4.10.3 to
+<a href="https://github.com/mjmlio/mjml/releases/tag/v4.12.0">4.12.0</a></li><li>Sass from 1.48.0 to
+<a href="https://github.com/sass/dart-sass/releases/tag/1.49.9">1.49.9</a></li><li>Prettier from 2.5.1 to <a href="https://prettier.io/blog/2022/03/16/2.6.0.html">2.6.0</a></li><li>mjml-bullet-list from 1.1.7 to
+<a href="https://github.com/premail/mjml-bullet-list/releases/tag/v1.2.2">1.2.2</a></li><li>mjml-signoff from 1.1.5 to
+<a href="https://github.com/premail/mjml-signoff/releases/tag/v1.2.3">1.2.3</a></li></ul><h3>Backwards-compatibility</h3><p>As this is a minor release, there are no breaking changes, and any designs or
+emails you created with prior versions will continue to work.</p><p>That said, there are many more theming features in the Premail&#x27;s newest example
+design and email, so be sure to upgrade before you start your next one!</p><hr/><p><strong>Full list of changes available on the <a href="/changelog/">changelog</a>.</strong></p><hr/>]]></content>
+        <author>
+            <name>Ivan Boothe</name>
+            <uri>https://rootwork.org</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Premail 2.0 released]]></title>
         <id>premail-2.0-released</id>
