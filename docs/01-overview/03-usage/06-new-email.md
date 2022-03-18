@@ -5,20 +5,25 @@ sidebar_label: Create a new email
 slug: create-a-new-email
 ---
 
-:::caution Still in development
-
-**The functionality described below is still in development.** For the moment,
-the easiest way to create a new email is to copy the `_example` subdirectory of
-`emails` and give it a new name.
-
-:::
-
 Once you have a design you want to use, you can create a new email based on it:
 
 ```sh
-premail new email special_offer -d postmodern
+premail new email welcome
 ```
 
-This creates an email using the `postmodern` design. If you don't specify the
-`-d` (or `--design`) flag, premail will build an email using the default design
-[specified in your `premail.yaml` file](/docs/overview/usage/project-settings).
+This will create a new subdirectory of `emails` (or the email directory
+[specified in your `premail.yaml` file](/docs/overview/usage/project-settings)).
+With no source email specified, it will create a
+[stub email](https://github.com/premail/premail/tree/main/src/scaffolding/email)
+with blank components.
+
+Want to create an email based on an existing one? Just add the `-e` or `--email`
+flag:
+
+```sh
+premail new email welcome -e _example
+```
+
+This creates a new email named `welcome` with the content of the
+[example email](https://github.com/premail/premail/tree/main/src/scaffolding/project/emails/_example)
+included with Premail.
