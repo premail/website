@@ -26,41 +26,42 @@ though, all you'll need to know is MJML.
 - `index.hbs`: This is the primary file that loads each of the components
   (`content` and `structure`) for your email. Usually, you won't need to edit
   this file unless you want to re-order the components themselves.
-- `content/`: This directory holds files that will _always_ change in each email
-  -- the title, preview text, header/hero area and main body.
-- `structure/`: This directory holds files that may _sometimes_ change in each
-  email -- top and bottom navigation menus, social media links, and the footer
-  area. Depending on how you prefer to create your designs, you might opt to
-  never change these components in a given design.
 - `designConfig.yaml` controls settings for your design. In order to render
   bulletproof email code, MJML sets some styles directly on elements, and uses
   inlined CSS on others. To make it easier to quickly create a new design, or
   slightly alter an existing one, this file lists the most common styles for a
   design, which are then mapped automatically to the appropriate locations in
   MJML and CSS. If there are styles you want to add or change that aren't listed
-  here, your next step should be the Sass files inside `theme`.
+  here, your next step should be the Sass files in `theme`. All settings here
+  can be overridden in individual structure or content files using valid MJML
+  syntax. For instance, the font size of navigation items is set in this file at
+  `text: navigation: size`, and in the default design's `bottomNav.hbs` file it
+  is overridden with the MJML `font-size` attribute.
+- `content`: This directory holds files that will _usually_ change in each email
+  -- the title, preview text, header/hero area and main body. If these templates
+  exist in an email you're building, they'll override the templates in the
+  design. So why have these templates in a design at all? So you can preview
+  what a design will look like -- in other words, when designing the design.
+- `structure`: This directory holds files that may _sometimes_ change -- top and
+  bottom navigation menus, social media links, and the footer area. Depending on
+  how you prefer to create your designs, you might opt to never change these
+  components in a given design. If and when these same files exist in an email,
+  they will be overridden by that email.
+- `dist`: This directory holds the built version of the design.
 
 ### Theme
 
-The `theme` subdirectory contains two sets of files: styles and configuration.
+The `theme` subdirectory contains `*.scss`
+[Sass files](https://sass-lang.com/guide) that make individual changes to CSS.
+If you're not familiar with Sass, the `scss` syntax used here is
+[a superset of CSS](https://sass-lang.com/documentation/syntax#scss) -- so any
+valid CSS can be placed in these files. If you read through them, you'll see
+that they use Sass to import variables from your design configuration, but you
+can ignore or overwrite these styles if you wish. The Sass files are heavily
+commented to make it clear which styles they control.
 
-- `theme/*.scss` files are [Sass files](https://sass-lang.com/guide) that make
-  individual changes to CSS. If you're not familiar with Sass, the `scss` syntax
-  used here is
-  [a superset of CSS](https://sass-lang.com/documentation/syntax#scss) -- so any
-  valid CSS can be placed in these files. If you read through them, you'll see
-  that they use Sass to import variables from your theme configuration, but you
-  can ignore or overwrite these styles if you wish. The Sass files are heavily
-  commented to make it clear which styles they control. Most styles you'll want
-  to control are in the `inline.scss` file, because these are the styles MJML
-  will inline to maximize email client compatibility.
-- `theme/*.hbs` files are Handlebars files with MJML markup that load settings
-  from `designConfig.yaml` into MJML itself. If you have a style that you can't
-  seem to change, check these files. They are included in the `index.hbs` file
-  automatically.
-
-Finally, note that some attributes must be set on `<mj-wrapper>` elements for
-each component directly in the `index.hbs` file. In every case, these are
-loading settings from `designConfig.yaml`, so it should be easiest to change
-styles there -- but if you need to alter or add something like a CSS class, take
-a look at what's being defined in `index.hbs`.
+Finally, note that some attributes must be set on `<mj-wrapper>` and other
+elements directly in the `index.hbs` file. In every case, these load settings
+from `designConfig.yaml`, so it should be easiest to change styles there -- but
+if you need to alter or add something like a CSS class, take a look at what's
+being defined in `index.hbs`.
