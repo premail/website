@@ -1,5 +1,18 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/premail/premail/security/policy
+    about: Please review our security policy for more details
+  - name: File an issue with Premail
+    url: https://github.com/premail/premail/issues/new/choose
+    about:
+      Premail itself is located in another repo; to report issues with Premail
+      please use the Open button at right
+  - name: Premail contribution guide
+    url: https://premail.dev/contributing
+    about:
+      If you're new to Premail, start here to learn how to contribute — and
+      thank you!
   - name: '@premaildev on Twitter'
     url: https://twitter.com/premaildev
     about: Send a message to Premail on Twitter
